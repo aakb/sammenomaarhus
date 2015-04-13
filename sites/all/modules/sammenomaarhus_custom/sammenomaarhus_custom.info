@@ -1,0 +1,17 @@
+name = SammenOmAarhus custom
+description = Custom settings for Sammen Om Aarhus
+core = 7.x
+package = SammenOmAarhus
+version = 7.x-1.0
+project = sammenomaarhus_custom
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = strongarm
+dependencies[] = text
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[field_base][] = field_postnummer
+features[field_base][] = field_tlfnummer
+features[field_instance][] = user-user-field_postnummer
+features[field_instance][] = user-user-field_tlfnummer
+features[variable][] = theme_sammenomaarhus_settings
