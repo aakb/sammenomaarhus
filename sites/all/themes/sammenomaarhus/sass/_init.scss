@@ -79,6 +79,7 @@ $verdana:         Verdana, Tahoma, "DejaVu Sans", sans-serif;
 $tahoma:          Tahoma, Verdana, "DejaVu Sans", sans-serif;
 $helvetica:       Helvetica, Arial, "Nimbus Sans L", sans-serif;
 $arial:           Arial, Helvetica, "Nimbus Sans L", sans-serif;
+$pt-sans:         'PT Sans', Helvetica, Arial, "Nimbus Sans L", sans-serif;
 
 // For an explanation of why "sans-serif" is at the end of this list, see
 // http://meyerweb.com/eric/thoughts/2010/02/12/fixed-monospace-sizing/
@@ -86,7 +87,8 @@ $courier:         "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
 
 // Now create some variables for the font stacks we want to use on this site.
 $base-font-family: $verdana; // The font family set on the html element.
-$font-body:        $verdana;
+$font-header:      $pt-sans;
+$font-body:        $arial;
 $font-monospace:   $courier;
 
 
@@ -108,6 +110,7 @@ $tabs-border: #bbb;
 // Own variables
 //
 
+$header-color: #2A2A5A;
 
 $heatmap5: #ad003a;
 $heatmap5-light: #c64c75;

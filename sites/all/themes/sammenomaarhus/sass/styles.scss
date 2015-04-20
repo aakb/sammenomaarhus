@@ -30,11 +30,13 @@
 // Import webfonts
 //
 //'Open Sans'
-@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+//@import url('http://fonts.googleapis.com/css?family=Open+Sans');
 //'Fjord One'
-@import url('http://fonts.googleapis.com/css?family=Fjord+One');
+//@import url('http://fonts.googleapis.com/css?family=Fjord+One');
 //'FontAwesome'
 @import url('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
+
+@import url('http://fonts.googleapis.com/css?family=PT+Sans');
 
 
 //
@@ -62,10 +64,16 @@ $zen-gutter-width:  30px;
 //
 body {
 	// background: $gray-background; // Set through custom theme variables via theme-settings.php + sammenomaarhus.info
-	font-family: "Fjord One";
+	font-family: $font-body;
+    font-size: 0.9em;
     background-color: #ffffff;
     background-image: url('../images/back-flat-05-SH-1200x1200.png');
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-header;
+}
+
 //
 // Regular pages
 //
@@ -89,20 +97,8 @@ header#header {
 	min-height: 75px;
     background-color: #FFF;
 
-	@media all and (max-width: 1000px) {
-		img.header__logo-image {
-			 max-width: 270px;
-		}
-	}
-	@media all and (max-width: 640px) {
-		min-height: 230px;
-	}
-	@media all and (max-width: 480px) {
-		min-height: 260px;
-	}
-
 	// The configurable header background image is set in html.tpl.php
-//	background: url(../images/header_bg-tile.png);
+    // background: url(../images/header_bg-tile.png);
 
 	//
 	// Logo
@@ -178,13 +174,13 @@ header#header {
 				}
 			}
 			li.first a {
-				@include border-top-left-radius(10px);
-				@include border-bottom-left-radius(10px);
+				@include border-top-left-radius(2px);
+				@include border-bottom-left-radius(2px);
 				padding-left: 15px;
 			}
 			li.last a {
-				@include border-top-right-radius(10px);
-				@include border-bottom-right-radius(10px);
+				@include border-top-right-radius(2px);
+				@include border-bottom-right-radius(2px);
 				padding-right: 15px;
 			}
 
@@ -197,12 +193,12 @@ header#header {
 
 		}
 		ul.menu {
+          margin-left: 1px;
 			li a {
 				background: $highlight;
 				color: white;
 				&:hover, &:focus {
 					opacity: 1;
-//					background: $highlight-dark;
 					background: darken($highlight, 10%);
 				}
 			}
@@ -216,8 +212,6 @@ header#header {
 //
 @media all and (max-width: 840px) {
 	header#header {
-
-		min-height: 150px;
 
 		//
 		// Icon for toggling nav

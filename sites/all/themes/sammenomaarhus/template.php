@@ -86,7 +86,7 @@ function sammenomaarhus_preprocess_node_proposal(&$vars, $hook) {
   // Add css class based on hotness
   $hotness = $vars['content']['field_hotness'][0]['#markup'];
   $vars['classes_array'][] = 'hotness-' . $hotness;
-  
+
   // In teaser view: Remove link tags from body because the full teaser view is a link
   if ($vars['teaser']) {
     $vars['content']['body'][0]['#markup'] = strip_tags( $vars['content']['body'][0]['#markup'], "<b><strong><i><em><ul><ol><li>" );

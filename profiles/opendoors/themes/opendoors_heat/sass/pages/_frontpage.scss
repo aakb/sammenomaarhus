@@ -128,6 +128,8 @@ div.welcome-text {
 	//
 	// Slider Responsive overrrides
 	//
+
+    /*
 	@media all and (max-width: 768px){
 		div.flexslider {
 			ul.slides {
@@ -157,15 +159,9 @@ div.welcome-text {
 					//
 					// image
 					//
-					div.field-type-image {
-						position: relative;
-						float: none;
-						width: 100%;
-						padding: 0;
-						img {
-							max-width: none;
-						}
-					}
+
+
+
 					//
 					// text
 					//
@@ -195,6 +191,8 @@ div.welcome-text {
 			}
 		}
 	}
+	*/
+
 	@media all and (max-width: 400px){
 
 		div.flexslider ul.slides li {
