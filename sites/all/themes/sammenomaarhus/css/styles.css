@@ -2766,6 +2766,7 @@ article.node-proposal {
     color: #f2f2f2; }
   article.node-proposal div.heatmap.detail-view h2 {
     margin-left: 10px;
+    margin-top: 0.5em;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; }
@@ -3092,7 +3093,7 @@ div#overlay {
     margin-right: 40px; }
     body.node-type-proposal div.heatmap.detail-view div.field-name-field-category,
     div#overlay div.heatmap.detail-view div.field-name-field-category {
-      margin-left: 40px; }
+      margin-left: 10px; }
     body.node-type-proposal div.heatmap.detail-view span.rate-count:before,
     div#overlay div.heatmap.detail-view span.rate-count:before {
       content: none; }

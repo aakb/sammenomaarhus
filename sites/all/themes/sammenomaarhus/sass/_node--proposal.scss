@@ -81,6 +81,7 @@ article.node-proposal {
   //
   div.heatmap.detail-view h2 {
     margin-left: 10px;
+    margin-top: 0.5em;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -598,7 +599,7 @@ div#overlay {
 		margin-right: $indentation;
 
 		div.field-name-field-category {
-			margin-left: $indentation;
+			margin-left: 10px;
 		}
 
 
