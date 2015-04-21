@@ -51,6 +51,11 @@ article.node-proposal {
 
 		div.heatmap {
 			@include single-transition( all, 0.5s );
+
+          span.category-label {
+            padding-left: 0;
+          }
+
 		}
 
 		&:hover div.heatmap {

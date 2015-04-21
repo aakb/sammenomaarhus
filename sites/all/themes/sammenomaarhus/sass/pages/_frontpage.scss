@@ -294,6 +294,32 @@ div.proposal-form {
 
   }
 
+  // label "Title"
+  label[for="edit-title"] {
+    display: inline-block;
+    font-size: 1.5em;
+
+    .form-required {
+      display: none;
+    }
+
+    &:after {
+      content: ':';
+    }
+  }
+
+  input#edit-title {
+    color: $white-font;
+    font-size: 1.5em;
+    border: none;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    background: transparent;
+
+    &:focus {
+      outline:none;
+    }
+  }
+
   // label "Body"
   label[for="edit-body-und-0-value"] {
     display: none;

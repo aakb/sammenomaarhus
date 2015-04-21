@@ -1466,7 +1466,7 @@ body {
   background-color: #ffffff;
   background-image: url("../images/back-flat-05-SH-1200x1200.png"); }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, label {
   font-family: "PT Sans", Helvetica, Arial, "Nimbus Sans L", sans-serif; }
 
 body.page-delayed-ownership-feedback div#main,
@@ -2295,6 +2295,21 @@ div.proposal-form {
     color: #191919;
     padding-top: 0;
     padding-bottom: 20px; }
+  div.proposal-form label[for="edit-title"] {
+    display: inline-block;
+    font-size: 1.5em; }
+    div.proposal-form label[for="edit-title"] .form-required {
+      display: none; }
+    div.proposal-form label[for="edit-title"]:after {
+      content: ':'; }
+  div.proposal-form input#edit-title {
+    color: #f2f2f2;
+    font-size: 1.5em;
+    border: none;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    background: transparent; }
+    div.proposal-form input#edit-title:focus {
+      outline: none; }
   div.proposal-form label[for="edit-body-und-0-value"] {
     display: none; }
   div.proposal-form div.form-type-textarea {
@@ -2740,6 +2755,8 @@ article.node-proposal {
       -o-transition: all 0.5s;
       -webkit-transition: all 0.5s;
       transition: all 0.5s; }
+      article.node-proposal a.node-url div.heatmap span.category-label {
+        padding-left: 0; }
     article.node-proposal a.node-url:hover div.heatmap {
       background-color: #333;
       -moz-transition: all 0.3s;
