@@ -90,7 +90,9 @@ function opendoors_discussion_strongarm() {
     'rss' => 0,
     'search_index' => 0,
     'search_result' => 0,
-    'diff_standard' => 0,
+    'email_plain' => 0,
+    'email_html' => 0,
+    'email_textalt' => 0,
     'token' => 0,
     'nodeform' => 0,
   );

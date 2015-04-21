@@ -85,9 +85,11 @@ function opendoors_discussion_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'maxlength_js' => 400,
+        'maxlength_js' => 4000,
         'maxlength_js_enforce' => 0,
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'maxlength_js_label_summary' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'maxlength_js_summary' => '',
         'maxlength_js_truncate_html' => 0,
         'rows' => 20,
         'summary_rows' => 5,
@@ -104,7 +106,7 @@ function opendoors_discussion_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
@@ -505,8 +507,9 @@ function opendoors_discussion_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'hidden',
+        'module' => 'serial',
         'settings' => array(),
-        'type' => 'hidden',
+        'type' => 'serial_formatter_default',
         'weight' => 3,
       ),
     ),

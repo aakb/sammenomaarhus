@@ -65,8 +65,7 @@
 		}
 
     /* Main bubble */
-    div.proposal-form,
-    div.proposal-form div.form-textarea-wrapper:before
+    div.proposal-form
     { background-color: <?php print theme_get_setting('main_bubble_color'); ?>; }
 
     /* Response bubble background color */

@@ -330,12 +330,6 @@ div.proposal-form {
 
   div.form-type-textarea {
     position: relative;
-    &:before {
-      content: url(../images/bubble-hugehook.png);
-      position: absolute;
-      left: 161px;
-      bottom: -54px;
-    }
   }
 
   div.form-textarea-wrapper {
@@ -374,6 +368,10 @@ div.proposal-form {
     th {
       font-family: $font-header;
       font-size: 1.3em;
+    }
+
+    table {
+      margin-top: 0;
     }
 
     legend {

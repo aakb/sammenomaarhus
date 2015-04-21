@@ -2314,11 +2314,6 @@ div.proposal-form {
     display: none; }
   div.proposal-form div.form-type-textarea {
     position: relative; }
-    div.proposal-form div.form-type-textarea:before {
-      content: url(../images/bubble-hugehook.png);
-      position: absolute;
-      left: 161px;
-      bottom: -54px; }
   div.proposal-form div.form-textarea-wrapper {
     position: relative; }
     div.proposal-form div.form-textarea-wrapper:before {
@@ -2343,6 +2338,8 @@ div.proposal-form {
   div.proposal-form #edit-field-attachment th {
     font-family: "PT Sans", Helvetica, Arial, "Nimbus Sans L", sans-serif;
     font-size: 1.3em; }
+  div.proposal-form #edit-field-attachment table {
+    margin-top: 0; }
   div.proposal-form #edit-field-attachment legend {
     display: none; }
   div.proposal-form #edit-field-attachment div.tabledrag-toggle-weight-wrapper {
