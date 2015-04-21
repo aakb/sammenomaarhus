@@ -359,12 +359,38 @@ div.proposal-form {
       border: 3px dashed rgba(255, 255, 255, .5);
       padding: 15px;
       font-size: px2em(22px);
+
+      &:focus {
+        outline:none;
+      }
     }
     div.grippie {
       display: none;
     }
 
   }
+
+  #edit-field-attachment {
+    th {
+      font-family: $font-header;
+      font-size: 1.3em;
+    }
+
+    legend {
+      display: none;
+    }
+
+    div.tabledrag-toggle-weight-wrapper {
+      display: none;
+    }
+
+    label {
+      font-size: 1.5em;
+      margin-bottom: 0.5em;
+    }
+  }
+
+
   // Hide Bubble hook covers when CKE
   div.form-item-body-und-0-value,
   div.form-item-field-municipal-response-und-0-value {
@@ -410,10 +436,16 @@ div.proposal-form {
   // Category chooser: Radio buttons
   //
   div#edit-field-category {
+    padding: 0;
+    margin: 0;
+
     div#edit-field-category-und {
       @include  border-radius($border-radius-xlarge);
       width: 100%;
       border: none;
+      padding: 0;
+      margin: 0;
+      min-height: 0;
     }
     div.form-type-radio {
       label {
