@@ -141,7 +141,7 @@ function opendoors_discussion_default_page_manager_pages() {
     $pane->panel = 'middle';
     $pane->type = 'block';
     $pane->subtype = 'opendoors_discussion-proposal_add_form';
-    $pane->shown = TRUE;
+    $pane->shown = FALSE;
     $pane->access = array();
     $pane->configuration = array(
       'override_title' => 0,
@@ -203,7 +203,7 @@ function opendoors_discussion_default_page_manager_pages() {
     $pane->panel = 'middle';
     $pane->type = 'block';
     $pane->subtype = 'stats_block-0';
-    $pane->shown = TRUE;
+    $pane->shown = FALSE;
     $pane->access = array();
     $pane->configuration = array(
       'override_title' => 1,
