@@ -2,6 +2,7 @@
 //
 // Pane Welcome-text / Slider
 //
+
 div.welcome-text {
 
   @include zen-clear();
@@ -50,202 +51,44 @@ div.welcome-text {
     }
   }
 
+}
 
-  //
-  // Flexslider
-  //
-  div.flexslider {
-    background: transparent;
-    border: none;
-    box-shadow: 0 0 0 $gray-background; // remove shadow
-    ul.slides {
-      li {
-        position: relative;
-        min-height: 135px;
-        //
-        // header (title)
-        //
-        header {
-          //					width: 67%;
-          padding-left: 200px;
-          //					float: right;
-          a {
-            color: $white-font;
-            text-decoration: none;
-            &:hover, &:focus {
-              text-decoration: underline;
-            }
-            @include border-radius($border-radius);
-            color: $black-font;
-          }
-        }
-        //
-        // image
-        //
-        div.field-type-image {
-          position: absolute;
-          left: 0;
-          top: 0;
-          float: left;
-          width: 170px;
-          //					padding-right: 15px;
-          img {
-            max-width: 170px;
-            @include border-radius($border-radius);
-          }
-        }
-        //
-        // text
-        //
-        div.field-name-body {
-          //					float: right;
-          //					width: 67%;
-          padding-left: 200px;
-          p {
-          }
-        }
-      }
+div.button-menu {
+  @include zen-clear();
+  margin-right:  $zen-gutter-width / 2;
+  margin-left:  $zen-gutter-width / 2;
+
+  margin-bottom: $vertical-margin;
+
+  text-align: center;
+
+  ul.menu {
+    display: inline-block;
+
+    li {
+      float: left;
+      margin-left: 2em;
+      list-style-image: none;
+      list-style-type: none;
     }
-    //
-    // Slide navigation
-    //
-    ul.flex-direction-nav a.flex-prev,
-    ul.flex-direction-nav a.flex-next {
-      z-index: 30;
-      &:before {
-        padding-top: 10px;
-        color: $black-font;
-        font-size: 26px;
-      }
+
+    a {
+      font-size: 1.2em 1.5em;
+      font-family: $font-header;
+      background-color: $highlight;
+      color: $white-font;
+      padding: 1em 40px 1em 1em;
+      border-radius: $border-radius;
+      text-decoration: none;
+      //background-image: url("../images/arrow-right-white.png");
+      background: $highlight url("../images/arrow-right-white.png") no-repeat right 10px center;
+      //@include button-submit-huge( $white-font, $highlight, white, $gray-dark, "../images/arrow-right-white.png", "../images/arrow-right-white.png" );
     }
-    ul.flex-direction-nav a.flex-prev {
-      left: -22px;
-    }
-    ul.flex-direction-nav a.flex-next {
-      right: -22px;
+
+    a:hover, a:active {
+      background-color: $highlight-dark;
     }
   }
-  //
-  // Slider Responsive overrrides
-  //
-
-  @media all and (max-width: 520px){
-    div.flexslider {
-      ul.slides {
-        li {
-          //
-          // header (title)
-          //
-          header {
-            padding-left: 0;
-          }
-          //
-          // image
-          //
-          div.field-type-image {
-            img {
-              display: none;
-            }
-          }
-          //
-          // text
-          //
-          div.field-name-body {
-            padding-left: 0;
-          }
-        }
-      }
-    }
-  }
-
-  /*
-	@media all and (max-width: 768px){
-		div.flexslider {
-			ul.slides {
-				li {
-					//
-					// header (title)
-					//
-					header {
-						float: none;
-						width: 100%;
-						padding: 0;
-						z-index: 10;
-
-						position: absolute;
-						top: 10px;
-						left: 15px;
-
-						h2 {
-							display: inline-block;
-							padding: 5px;
-							background: $white-font;
-							font-size: px2em(22px);
-							opacity: 0.8;
-							@include border-radius($border-radius);
-						}
-					}
-					//
-					// image
-					//
-					div.field-type-image {
-						position: relative;
-						float: none;
-						width: 100%;
-						padding: 0;
-						img {
-							max-width: none;
-						}
-					}
-					//
-					// text
-					//
-					div.field-name-body {
-						float: none;
-						width: 100%;
-						padding: 5px 15px 10px;
-						position: absolute;
-						bottom: 0;
-						background: $black-font;
-						color: $white-font;
-						opacity: 0.6;
-
-						@include border-bottom-left-radius($border-radius);
-						@include border-bottom-right-radius($border-radius);
-
-						a {
-							display: inline-block;
-							color: $white-font;
-							background: #000000;
-							@include border-radius($border-radius-xsmall);
-							padding: 0 5px;
-						}
-
-					}
-				}
-			}
-		}
-	}
-	*/
-  @media all and (max-width: 400px){
-
-    div.flexslider ul.slides li {
-      //			header { position: relative; }
-      div.field-type-image {
-        img {
-          @include border-bottom-right-radius(0);
-          @include border-bottom-left-radius(0);
-        }
-      }
-      div.field-name-body {
-        position: relative;
-      }
-    }
-
-  }
-
-
-
 }
 
 //

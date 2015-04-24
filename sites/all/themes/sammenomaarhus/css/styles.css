@@ -2161,76 +2161,7 @@ div.welcome-text {
   clear: left;
   margin-right: 15px;
   margin-left: 15px;
-  margin-bottom: 40px;
-  /*
-	@media all and (max-width: 768px){
-		div.flexslider {
-			ul.slides {
-				li {
-					//
-					// header (title)
-					//
-					header {
-						float: none;
-						width: 100%;
-						padding: 0;
-						z-index: 10;
-
-						position: absolute;
-						top: 10px;
-						left: 15px;
-
-						h2 {
-							display: inline-block;
-							padding: 5px;
-							background: $white-font;
-							font-size: px2em(22px);
-							opacity: 0.8;
-							@include border-radius($border-radius);
-						}
-					}
-					//
-					// image
-					//
-					div.field-type-image {
-						position: relative;
-						float: none;
-						width: 100%;
-						padding: 0;
-						img {
-							max-width: none;
-						}
-					}
-					//
-					// text
-					//
-					div.field-name-body {
-						float: none;
-						width: 100%;
-						padding: 5px 15px 10px;
-						position: absolute;
-						bottom: 0;
-						background: $black-font;
-						color: $white-font;
-						opacity: 0.6;
-
-						@include border-bottom-left-radius($border-radius);
-						@include border-bottom-right-radius($border-radius);
-
-						a {
-							display: inline-block;
-							color: $white-font;
-							background: #000000;
-							@include border-radius($border-radius-xsmall);
-							padding: 0 5px;
-						}
-
-					}
-				}
-			}
-		}
-	}
-	*/ }
+  margin-bottom: 40px; }
   div.welcome-text article.node-pane-embedded header {
     display: none; }
   div.welcome-text article.node-pane-embedded div.image {
@@ -2268,66 +2199,31 @@ div.welcome-text {
     div.welcome-text article.node-pane-embedded div.article-content p {
       margin-top: 0;
       font-size: 1.125em; }
-  div.welcome-text div.flexslider {
-    background: transparent;
-    border: none;
-    box-shadow: 0 0 0 #eaeaea; }
-    div.welcome-text div.flexslider ul.slides li {
-      position: relative;
-      min-height: 135px; }
-      div.welcome-text div.flexslider ul.slides li header {
-        padding-left: 200px; }
-        div.welcome-text div.flexslider ul.slides li header a {
-          color: #f2f2f2;
-          text-decoration: none;
-          -moz-border-radius: 5px;
-          -webkit-border-radius: 5px;
-          border-radius: 5px;
-          color: #191919; }
-          div.welcome-text div.flexslider ul.slides li header a:hover, div.welcome-text div.flexslider ul.slides li header a:focus {
-            text-decoration: underline; }
-      div.welcome-text div.flexslider ul.slides li div.field-type-image {
-        position: absolute;
-        left: 0;
-        top: 0;
-        float: left;
-        width: 170px; }
-        div.welcome-text div.flexslider ul.slides li div.field-type-image img {
-          max-width: 170px;
-          -moz-border-radius: 5px;
-          -webkit-border-radius: 5px;
-          border-radius: 5px; }
-      div.welcome-text div.flexslider ul.slides li div.field-name-body {
-        padding-left: 200px; }
-    div.welcome-text div.flexslider ul.flex-direction-nav a.flex-prev,
-    div.welcome-text div.flexslider ul.flex-direction-nav a.flex-next {
-      z-index: 30; }
-      div.welcome-text div.flexslider ul.flex-direction-nav a.flex-prev:before,
-      div.welcome-text div.flexslider ul.flex-direction-nav a.flex-next:before {
-        padding-top: 10px;
-        color: #191919;
-        font-size: 26px; }
-    div.welcome-text div.flexslider ul.flex-direction-nav a.flex-prev {
-      left: -22px; }
-    div.welcome-text div.flexslider ul.flex-direction-nav a.flex-next {
-      right: -22px; }
-  @media all and (max-width: 520px) {
-    div.welcome-text div.flexslider ul.slides li header {
-      padding-left: 0; }
-    div.welcome-text div.flexslider ul.slides li div.field-type-image img {
-      display: none; }
-    div.welcome-text div.flexslider ul.slides li div.field-name-body {
-      padding-left: 0; } }
-  @media all and (max-width: 400px) {
-    div.welcome-text div.flexslider ul.slides li div.field-type-image img {
-      -moz-border-radius-bottomright: 0;
-      -webkit-border-bottom-right-radius: 0;
-      border-bottom-right-radius: 0;
-      -moz-border-radius-bottomleft: 0;
-      -webkit-border-bottom-left-radius: 0;
-      border-bottom-left-radius: 0; }
-    div.welcome-text div.flexslider ul.slides li div.field-name-body {
-      position: relative; } }
+
+div.button-menu {
+  clear: left;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 40px;
+  text-align: center; }
+  div.button-menu ul.menu {
+    display: inline-block; }
+    div.button-menu ul.menu li {
+      float: left;
+      margin-left: 2em;
+      list-style-image: none;
+      list-style-type: none; }
+    div.button-menu ul.menu a {
+      font-size: 1.2em 1.5em;
+      font-family: "PT Sans", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+      background-color: #b13a32;
+      color: #f2f2f2;
+      padding: 1em 40px 1em 1em;
+      border-radius: 5px;
+      text-decoration: none;
+      background: #b13a32 url("../images/arrow-right-white.png") no-repeat right 10px center; }
+    div.button-menu ul.menu a:hover, div.button-menu ul.menu a:active {
+      background-color: #61201c; }
 
 div.proposal-form {
   clear: left;
@@ -3521,7 +3417,7 @@ div#pane-proposal-discussion-filter ul.primary-filters li span:hover {
 
 /* Category Chooser background */
 div#edit-field-category div#edit-field-category-und {
-  background-color: #FFFFFF; }
+  background-color: #157BB3; }
 
 /* Category Chooser + Filter bar category items */
 div#edit-field-category div.form-type-radio label,
