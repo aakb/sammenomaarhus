@@ -170,7 +170,7 @@ article.node-proposal {
 					line-height: 15px;
 					a {
 						text-decoration: none;
-						color: $gray-font;
+						color: $white-font;
 						//						@include single-transition( all, 0.3s );
 						&:hover, &:focus {
 							//							@include single-transition( all, 0.1s );
@@ -415,7 +415,8 @@ article.node-proposal {
 		// regular bubble text
 		//
 		p {
-			font-size: px2em(20px);
+			//font-size: px2em(20px);
+          font-size: 1em;
 		}
 		a {
 			color: $white-font;
@@ -589,7 +590,7 @@ div#overlay {
 			padding-right: 25px;
 			li a {
 				background: $black-font;
-				color: $gray-font;
+				color: $white-font;
 				&:hover, &:focus {
 					color: $white-font;
 				}

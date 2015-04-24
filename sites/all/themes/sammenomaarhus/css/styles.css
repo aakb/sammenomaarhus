@@ -1561,7 +1561,6 @@ header#header {
           color: #000000;
           text-decoration: none;
           background: #b2b2b2;
-          opacity: 0.8;
           -moz-transition: all 0.3s;
           -o-transition: all 0.3s;
           -webkit-transition: all 0.3s;
@@ -1651,8 +1650,7 @@ header#header {
               -moz-border-radius: 5px;
               -webkit-border-radius: 5px;
               border-radius: 5px;
-              padding: 10px;
-              opacity: 0.95; }
+              padding: 10px; }
     header#header nav#secondary-menu ul.links {
       width: 100% !important;
       display: block;
@@ -2083,6 +2081,31 @@ body.page-user-edit h1#page-title {
   form#user-pass div.form-item input,
   form#user-login div.form-item input {
     width: 100%; } }
+div.button-menu {
+  clear: left;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 40px;
+  text-align: center; }
+  div.button-menu ul.menu {
+    display: inline-block; }
+    div.button-menu ul.menu li {
+      float: left;
+      margin-left: 2em;
+      list-style-image: none;
+      list-style-type: none; }
+    div.button-menu ul.menu a {
+      font-size: 1.2em 1.5em;
+      font-family: "PT Sans", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+      background-color: #b13a32;
+      color: #f2f2f2;
+      padding: 1em 40px 1em 1em;
+      border-radius: 5px;
+      text-decoration: none;
+      background: #b13a32 url("../images/arrow-right-white.png") no-repeat right 10px center; }
+    div.button-menu ul.menu a:hover, div.button-menu ul.menu a:active {
+      background-color: #61201c; }
+
 /* Original colors
 $heatmap5: #ad003a;
 $heatmap5-light: #c64c75;
@@ -2199,31 +2222,6 @@ div.welcome-text {
     div.welcome-text article.node-pane-embedded div.article-content p {
       margin-top: 0;
       font-size: 1.125em; }
-
-div.button-menu {
-  clear: left;
-  margin-right: 15px;
-  margin-left: 15px;
-  margin-bottom: 40px;
-  text-align: center; }
-  div.button-menu ul.menu {
-    display: inline-block; }
-    div.button-menu ul.menu li {
-      float: left;
-      margin-left: 2em;
-      list-style-image: none;
-      list-style-type: none; }
-    div.button-menu ul.menu a {
-      font-size: 1.2em 1.5em;
-      font-family: "PT Sans", Helvetica, Arial, "Nimbus Sans L", sans-serif;
-      background-color: #b13a32;
-      color: #f2f2f2;
-      padding: 1em 40px 1em 1em;
-      border-radius: 5px;
-      text-decoration: none;
-      background: #b13a32 url("../images/arrow-right-white.png") no-repeat right 10px center; }
-    div.button-menu ul.menu a:hover, div.button-menu ul.menu a:active {
-      background-color: #61201c; }
 
 div.proposal-form {
   clear: left;
@@ -2875,7 +2873,7 @@ article.node-proposal {
           line-height: 15px; }
           article.node-proposal .hover-box-css div.content-container ul li a {
             text-decoration: none;
-            color: #656565; }
+            color: #f2f2f2; }
             article.node-proposal .hover-box-css div.content-container ul li a:hover, article.node-proposal .hover-box-css div.content-container ul li a:focus {
               color: white; }
           article.node-proposal .hover-box-css div.content-container ul li a:before {
@@ -3029,7 +3027,7 @@ article.node-proposal {
       article.node-proposal div.bubble div.submitted a {
         color: #f2f2f2; }
     article.node-proposal div.bubble p {
-      font-size: 1.25em; }
+      font-size: 1em; }
     article.node-proposal div.bubble a {
       color: #f2f2f2; }
       article.node-proposal div.bubble a:hover, article.node-proposal div.bubble a:focus {
@@ -3134,7 +3132,7 @@ div#overlay {
       body.node-type-proposal div.hover-box-css div.content-container li a,
       div#overlay div.hover-box-css div.content-container li a {
         background: #191919;
-        color: #656565; }
+        color: #f2f2f2; }
         body.node-type-proposal div.hover-box-css div.content-container li a:hover, body.node-type-proposal div.hover-box-css div.content-container li a:focus,
         div#overlay div.hover-box-css div.content-container li a:hover,
         div#overlay div.hover-box-css div.content-container li a:focus {

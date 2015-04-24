@@ -253,7 +253,7 @@ function opendoors_discussion_default_page_manager_pages() {
     $pane->panel = 'middle';
     $pane->type = 'views';
     $pane->subtype = 'show_content_by_id';
-    $pane->shown = TRUE;
+    $pane->shown = FALSE;
     $pane->access = array();
     $pane->configuration = array(
       'override_pager_settings' => 0,
@@ -454,6 +454,71 @@ function opendoors_discussion_default_page_manager_pages() {
     $pane->uuid = 'aaeba8a0-3c5e-43e7-ae3c-6d5e1b1c2b3c';
     $display->content['new-aaeba8a0-3c5e-43e7-ae3c-6d5e1b1c2b3c'] = $pane;
     $display->panels['middle'][0] = 'new-aaeba8a0-3c5e-43e7-ae3c-6d5e1b1c2b3c';
+    $pane = new stdClass();
+    $pane->pid = 'new-e766bef2-8ff3-4c11-8b5a-472c9d4d8d28';
+    $pane->panel = 'middle';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
+    $pane->shown = TRUE;
+    $pane->access = array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'role',
+          'settings' => array(
+            'rids' => array(),
+          ),
+          'context' => 'logged-in-user',
+          'not' => TRUE,
+        ),
+      ),
+    );
+    $pane->configuration = array(
+      'admin_title' => '',
+      'title' => '',
+      'body' => '<p>Du skal være logget ind for at stille forslag</p>',
+      'format' => 'wysiwyg',
+      'substitute' => TRUE,
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'welcome-text',
+    );
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = 'e766bef2-8ff3-4c11-8b5a-472c9d4d8d28';
+    $display->content['new-e766bef2-8ff3-4c11-8b5a-472c9d4d8d28'] = $pane;
+    $display->panels['middle'][1] = 'new-e766bef2-8ff3-4c11-8b5a-472c9d4d8d28';
+    $pane = new stdClass();
+    $pane->pid = 'new-2d474f01-5885-4d0d-adfb-bcc59435735a';
+    $pane->panel = 'middle';
+    $pane->type = 'block';
+    $pane->subtype = 'user_links-user_links';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'button-menu',
+    );
+    $pane->extras = array();
+    $pane->position = 2;
+    $pane->locks = array();
+    $pane->uuid = '2d474f01-5885-4d0d-adfb-bcc59435735a';
+    $display->content['new-2d474f01-5885-4d0d-adfb-bcc59435735a'] = $pane;
+    $display->panels['middle'][2] = 'new-2d474f01-5885-4d0d-adfb-bcc59435735a';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

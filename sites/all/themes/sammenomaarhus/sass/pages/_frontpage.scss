@@ -53,44 +53,6 @@ div.welcome-text {
 
 }
 
-div.button-menu {
-  @include zen-clear();
-  margin-right:  $zen-gutter-width / 2;
-  margin-left:  $zen-gutter-width / 2;
-
-  margin-bottom: $vertical-margin;
-
-  text-align: center;
-
-  ul.menu {
-    display: inline-block;
-
-    li {
-      float: left;
-      margin-left: 2em;
-      list-style-image: none;
-      list-style-type: none;
-    }
-
-    a {
-      font-size: 1.2em 1.5em;
-      font-family: $font-header;
-      background-color: $highlight;
-      color: $white-font;
-      padding: 1em 40px 1em 1em;
-      border-radius: $border-radius;
-      text-decoration: none;
-      //background-image: url("../images/arrow-right-white.png");
-      background: $highlight url("../images/arrow-right-white.png") no-repeat right 10px center;
-      //@include button-submit-huge( $white-font, $highlight, white, $gray-dark, "../images/arrow-right-white.png", "../images/arrow-right-white.png" );
-    }
-
-    a:hover, a:active {
-      background-color: $highlight-dark;
-    }
-  }
-}
-
 //
 // Proposal Form
 //
