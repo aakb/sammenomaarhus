@@ -111,7 +111,9 @@ $tabs-border: #bbb;
 //
 
 $header-color: #2A2A5A;
+$background-hover: #333333;
 
+/* Original colors
 $heatmap5: #ad003a;
 $heatmap5-light: #c64c75;
 $heatmap4: #990062;
@@ -124,6 +126,50 @@ $heatmap1: #2a2d58;
 $heatmap1-light: #517495;
 $heatmap0: #157BB3;
 $heatmap0-light: #4c7f91;
+*/
+
+$heatmap0: #157BB3;
+$heatmap1: #066192;
+$heatmap2: #054C72;
+$heatmap3: #CB360B;
+$heatmap4: #A62500;
+$heatmap5: #7D1C00;
+
+$heatmap5-light: lighten($heatmap5, 20%);
+$heatmap4-light: lighten($heatmap4, 20%);
+$heatmap3-light: lighten($heatmap3, 20%);
+$heatmap2-light: lighten($heatmap2, 20%);
+$heatmap1-light: lighten($heatmap1, 20%);
+$heatmap0-light: lighten($heatmap0, 20%);
+
+/*
+$heatmap5: #D03D1D;
+$heatmap5-light: lighten($heatmap5, 20%);
+$heatmap4: #ffa832;
+$heatmap4-light: lighten($heatmap4, 20%);
+$heatmap3: #ffb76d;
+$heatmap3-light: lighten($heatmap3, 20%);
+$heatmap2: #ffbd73;
+$heatmap2-light: lighten($heatmap2, 20%);
+$heatmap1: #ffbc35;
+$heatmap1-light: lighten($heatmap1, 20%);
+$heatmap0: #ffbb32;
+$heatmap0-light: lighten($heatmap0, 20%);
+*/
+
+/*
+Mange svar
+
+#ff801f
+#ffa832
+#ffb76d
+#ffbd73
+#ffbc35
+#ffbb32
+
+
+Få svar
+*/
 
 $highlight: #b13a32;
 $highlight-dark: darken($highlight, 20%);
@@ -133,6 +179,7 @@ $response-blue: #0071bc;
 
 $blue: #003866; // = $heatmap1
 $ocean: #157BB3;
+
 $gray-background: #eaeaea;
 $gray-font: #656565;
 $black-font: #191919;

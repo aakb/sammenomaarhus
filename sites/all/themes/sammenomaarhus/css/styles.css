@@ -7,6 +7,47 @@
  * of these @include files will be combined into a single file.
  */
 /* Import Sass mixins, variables, Compass modules, etc. */
+/* Original colors
+$heatmap5: #ad003a;
+$heatmap5-light: #c64c75;
+$heatmap4: #990062;
+$heatmap4-light: #b74c91;
+$heatmap3: #480f6d;
+$heatmap3-light: #7f5799;
+$heatmap2: #1d1d68;
+$heatmap2-light: #606095;
+$heatmap1: #2a2d58;
+$heatmap1-light: #517495;
+$heatmap0: #157BB3;
+$heatmap0-light: #4c7f91;
+*/
+/*
+$heatmap5: #D03D1D;
+$heatmap5-light: lighten($heatmap5, 20%);
+$heatmap4: #ffa832;
+$heatmap4-light: lighten($heatmap4, 20%);
+$heatmap3: #ffb76d;
+$heatmap3-light: lighten($heatmap3, 20%);
+$heatmap2: #ffbd73;
+$heatmap2-light: lighten($heatmap2, 20%);
+$heatmap1: #ffbc35;
+$heatmap1-light: lighten($heatmap1, 20%);
+$heatmap0: #ffbb32;
+$heatmap0-light: lighten($heatmap0, 20%);
+*/
+/*
+Mange svar
+
+#ff801f
+#ffa832
+#ffb76d
+#ffbd73
+#ffbc35
+#ffbb32
+
+
+Få svar
+*/
 @import url("http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
 @import url("http://fonts.googleapis.com/css?family=PT+Sans");
 .clearfix:after, div#pane-proposal-discussion-filter:after, article.node-proposal header:after, body.node-type-proposal div.response-bubble-container div.response-bubble:after,
@@ -2042,6 +2083,47 @@ body.page-user-edit h1#page-title {
   form#user-pass div.form-item input,
   form#user-login div.form-item input {
     width: 100%; } }
+/* Original colors
+$heatmap5: #ad003a;
+$heatmap5-light: #c64c75;
+$heatmap4: #990062;
+$heatmap4-light: #b74c91;
+$heatmap3: #480f6d;
+$heatmap3-light: #7f5799;
+$heatmap2: #1d1d68;
+$heatmap2-light: #606095;
+$heatmap1: #2a2d58;
+$heatmap1-light: #517495;
+$heatmap0: #157BB3;
+$heatmap0-light: #4c7f91;
+*/
+/*
+$heatmap5: #D03D1D;
+$heatmap5-light: lighten($heatmap5, 20%);
+$heatmap4: #ffa832;
+$heatmap4-light: lighten($heatmap4, 20%);
+$heatmap3: #ffb76d;
+$heatmap3-light: lighten($heatmap3, 20%);
+$heatmap2: #ffbd73;
+$heatmap2-light: lighten($heatmap2, 20%);
+$heatmap1: #ffbc35;
+$heatmap1-light: lighten($heatmap1, 20%);
+$heatmap0: #ffbb32;
+$heatmap0-light: lighten($heatmap0, 20%);
+*/
+/*
+Mange svar
+
+#ff801f
+#ffa832
+#ffb76d
+#ffbd73
+#ffbc35
+#ffbb32
+
+
+Få svar
+*/
 .clearfix:after, div#pane-proposal-discussion-filter:after, article.node-proposal header:after, body.node-type-proposal div.response-bubble-container div.response-bubble:after,
 div#overlay div.response-bubble-container div.response-bubble:after {
   content: "";
@@ -2594,10 +2676,10 @@ div#pane-proposal-discussion-filter {
       display: inline-block;
       font-size: 1.125em; }
     div#pane-proposal-discussion-filter div.heatmap-legend span.cold {
-      color: #2a2d58;
+      color: #066192;
       padding-right: 10px; }
     div#pane-proposal-discussion-filter div.heatmap-legend span.hot {
-      color: #ad003a;
+      color: #7D1C00;
       padding-left: 10px; }
     div#pane-proposal-discussion-filter div.heatmap-legend li {
       position: relative;
@@ -2660,6 +2742,47 @@ div#pane-proposal-discussion-filter {
 div.view-proposals {
   clear: left; }
 
+/* Original colors
+$heatmap5: #ad003a;
+$heatmap5-light: #c64c75;
+$heatmap4: #990062;
+$heatmap4-light: #b74c91;
+$heatmap3: #480f6d;
+$heatmap3-light: #7f5799;
+$heatmap2: #1d1d68;
+$heatmap2-light: #606095;
+$heatmap1: #2a2d58;
+$heatmap1-light: #517495;
+$heatmap0: #157BB3;
+$heatmap0-light: #4c7f91;
+*/
+/*
+$heatmap5: #D03D1D;
+$heatmap5-light: lighten($heatmap5, 20%);
+$heatmap4: #ffa832;
+$heatmap4-light: lighten($heatmap4, 20%);
+$heatmap3: #ffb76d;
+$heatmap3-light: lighten($heatmap3, 20%);
+$heatmap2: #ffbd73;
+$heatmap2-light: lighten($heatmap2, 20%);
+$heatmap1: #ffbc35;
+$heatmap1-light: lighten($heatmap1, 20%);
+$heatmap0: #ffbb32;
+$heatmap0-light: lighten($heatmap0, 20%);
+*/
+/*
+Mange svar
+
+#ff801f
+#ffa832
+#ffb76d
+#ffbd73
+#ffbc35
+#ffbb32
+
+
+Få svar
+*/
 .clearfix:after, div#pane-proposal-discussion-filter:after, article.node-proposal header:after, body.node-type-proposal div.response-bubble-container div.response-bubble:after,
 div#overlay div.response-bubble-container div.response-bubble:after {
   content: "";
@@ -3380,3 +3503,90 @@ body.page-delayed-ownership-feedback div#content div.do-proceed {
       color: white; }
     body.page-delayed-ownership-feedback div#content div.do-proceed a.button:hover, body.page-delayed-ownership-feedback div#content div.do-proceed a.button:focus {
       padding-left: 10px; }
+
+/* Page generals */
+body {
+  /* background: ; */
+  color: Arial, Helvetica, "Nimbus Sans L", sans-serif; }
+
+/* Filter bar links */
+div#pane-proposal-discussion-filter ul.primary-filters li a,
+div#pane-proposal-discussion-filter ul.primary-filters li span {
+  color: #191919; }
+
+div#pane-proposal-discussion-filter ul.primary-filters li a:hover,
+div#pane-proposal-discussion-filter ul.primary-filters li.query-active a,
+div#pane-proposal-discussion-filter ul.primary-filters li span:hover {
+  color: #066192; }
+
+/* Category Chooser background */
+div#edit-field-category div#edit-field-category-und {
+  background-color: #FFFFFF; }
+
+/* Category Chooser + Filter bar category items */
+div#edit-field-category div.form-type-radio label,
+div#pane-proposal-discussion-filter ul.secondary-filters li a.active {
+  color: #f2f2f2;
+  background-color: #656565; }
+
+div#edit-field-category div.form-type-radio label:hover, div#edit-field-category div.form-type-radio label:focus,
+div#pane-proposal-discussion-filter ul.secondary-filters li a:hover, div#pane-proposal-discussion-filter ul.secondary-filters li a:focus, div#pane-proposal-discussion-filter ul.secondary-filters li a.active-term {
+  background-color: #333333; }
+
+/* Main bubble */
+div.proposal-form {
+  background-color: #157BB3; }
+
+/* Response bubble background color */
+body.node-type-proposal div.response-bubble-container, div#overlay div.response-bubble-container,
+div.response-bubble span.border-cover-snippet {
+  background-color: #157BB3; }
+
+/* Heatmap elements */
+article.node-proposal.hotness-0 div.heatmap,
+.hotness-0 span.border-cover-snippet,
+div.heatmap-legend li.hotness-0 {
+  background-color: #157BB3; }
+
+article.node-proposal.hotness-20 div.heatmap,
+.hotness-20 span.border-cover-snippet,
+div.heatmap-legend li.hotness-20 {
+  background-color: #066192; }
+
+article.node-proposal.hotness-40 div.heatmap,
+.hotness-40 span.border-cover-snippet,
+div.heatmap-legend li.hotness-40 {
+  background-color: #054C72; }
+
+article.node-proposal.hotness-60 div.heatmap,
+.hotness-60 span.border-cover-snippet,
+div.heatmap-legend li.hotness-60 {
+  background-color: #CB360B; }
+
+article.node-proposal.hotness-80 div.heatmap,
+.hotness-80 span.border-cover-snippet,
+div.heatmap-legend li.hotness-80 {
+  background-color: #A62500; }
+
+article.node-proposal.hotness-100 div.heatmap,
+.hotness-100 span.border-cover-snippet,
+div.heatmap-legend li.hotness-100 {
+  background-color: #7D1C00; }
+
+article.node-proposal.hotness-0 div.field-name-field-category, article.node-proposal.hotness-0 div.field-name-field-category a {
+  color: #157BB3; }
+
+article.node-proposal.hotness-20 div.field-name-field-category, article.node-proposal.hotness-1 div.field-name-field-category a {
+  color: #066192; }
+
+article.node-proposal.hotness-40 div.field-name-field-category, article.node-proposal.hotness-2 div.field-name-field-category a {
+  color: #054C72; }
+
+article.node-proposal.hotness-60 div.field-name-field-category, article.node-proposal.hotness-3 div.field-name-field-category a {
+  color: #CB360B; }
+
+article.node-proposal.hotness-80 div.field-name-field-category, article.node-proposal.hotness-4 div.field-name-field-category a {
+  color: #A62500; }
+
+article.node-proposal.hotness-100 div.field-name-field-category, article.node-proposal.hotness-5 div.field-name-field-category a {
+  color: #7D1C00; }

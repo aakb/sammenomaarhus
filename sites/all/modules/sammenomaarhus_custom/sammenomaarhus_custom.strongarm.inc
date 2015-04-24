@@ -24,6 +24,7 @@ function sammenomaarhus_custom_strongarm() {
     'toggle_main_menu' => 1,
     'toggle_secondary_menu' => 1,
     'header_background_1' => 0,
+    'use_custom_colors' => 0,
     'text_color' => '#000000',
     'page_background_color' => '',
     'filterbar_links' => '#191919',

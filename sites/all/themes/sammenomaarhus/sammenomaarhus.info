@@ -158,6 +158,9 @@ settings[zen_wireframes]           = 0
 ; Header background image
 settings[header_background_1] = true
 
+; Use custom colors
+settings[use_custom_colors] = 0
+
 ; Basic colors
 settings[text_color] = "#000"
 settings[page_background_color] = "#EAEAEA"
