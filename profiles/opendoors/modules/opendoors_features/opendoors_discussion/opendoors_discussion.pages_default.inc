@@ -485,7 +485,7 @@ function opendoors_discussion_default_page_manager_pages() {
     );
     $pane->css = array(
       'css_id' => '',
-      'css_class' => 'welcome-text',
+      'css_class' => 'not-logged-in',
     );
     $pane->extras = array();
     $pane->position = 1;

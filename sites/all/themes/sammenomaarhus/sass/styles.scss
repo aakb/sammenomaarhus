@@ -665,6 +665,18 @@ body.page-user-edit {
 	}
 }
 
+div.not-logged-in {
+
+  @include zen-clear();
+  margin-right: $zen-gutter-width / 2;
+  margin-left: $zen-gutter-width / 2;
+
+  margin-bottom: $vertical-margin;
+
+  text-align: center;
+  font-size: 2em;
+}
+
 div.button-menu {
   @include zen-clear();
   margin-right:  $zen-gutter-width / 2;
@@ -679,7 +691,7 @@ div.button-menu {
 
     li {
       float: left;
-      margin-left: 2em;
+      margin-left: 1.5em;
       list-style-image: none;
       list-style-type: none;
     }

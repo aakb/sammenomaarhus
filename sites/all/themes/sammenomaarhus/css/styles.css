@@ -2081,6 +2081,14 @@ body.page-user-edit h1#page-title {
   form#user-pass div.form-item input,
   form#user-login div.form-item input {
     width: 100%; } }
+div.not-logged-in {
+  clear: left;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 2em; }
+
 div.button-menu {
   clear: left;
   margin-right: 15px;
@@ -2091,7 +2099,7 @@ div.button-menu {
     display: inline-block; }
     div.button-menu ul.menu li {
       float: left;
-      margin-left: 2em;
+      margin-left: 1.5em;
       list-style-image: none;
       list-style-type: none; }
     div.button-menu ul.menu a {
