@@ -197,4 +197,10 @@ function sammenomaarhus_stats_block($metrics) {
   return $output;
 }
 
-
+/**
+ * Allow to translate views page title
+ * @param $view
+ */
+function asist_clean_views_pre_render(&$view)  {
+  $view->set_title(t($view->get_title()));
+}
