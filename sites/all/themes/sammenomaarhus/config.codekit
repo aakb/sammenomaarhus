@@ -40,6 +40,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/aaklogosubsite.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3927,
+		"inputAbbreviatedPath": "\/images\/aaklogosubsite.png",
+		"outputAbbreviatedPath": "\/images\/aaklogosubsite.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/arrow-right-red.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -666,17 +677,6 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
-		},
-	"\/logo.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 8557,
-		"inputAbbreviatedPath": "\/logo.png",
-		"outputAbbreviatedPath": "\/logo.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
 		},
 	"\/sass-extensions\/zen-grids\/stylesheets\/_zen.scss": {
 		"createSourceMap": 0,

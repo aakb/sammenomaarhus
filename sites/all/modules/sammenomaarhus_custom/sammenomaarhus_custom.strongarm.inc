@@ -40,8 +40,8 @@ function sammenomaarhus_custom_strongarm() {
     'heatmap_color_3' => '#480f6d',
     'heatmap_color_4' => '#990062',
     'heatmap_color_5' => '#2A2D58',
-    'default_logo' => 0,
-    'logo_path' => 'public://aaklogosubsite.png',
+    'default_logo' => 1,
+    'logo_path' => 'public://aaklogosubsite_0.png',
     'logo_upload' => '',
     'default_favicon' => 1,
     'favicon_path' => '',
@@ -54,11 +54,11 @@ function sammenomaarhus_custom_strongarm() {
     'zen_skip_link_anchor' => 'main-menu',
     'zen_skip_link_text' => 'Jump to navigation',
     'zen_html5_respond_meta' => array(
-      'respond' => 'respond',
-      'html5' => 'html5',
       'meta' => 'meta',
+      'respond' => 0,
+      'html5' => 0,
     ),
-    'zen_rebuild_registry' => 1,
+    'zen_rebuild_registry' => 0,
     'zen_wireframes' => 0,
   );
   $export['theme_sammenomaarhus_settings'] = $strongarm;
