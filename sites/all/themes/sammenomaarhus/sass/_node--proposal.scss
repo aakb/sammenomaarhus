@@ -37,6 +37,18 @@ $indentation : 40px;
 //
 // Proposal item
 //
+
+.front article.node-proposal div.bubble {
+
+    //
+    // when more than one item in a row, apply min-height to the bubble
+    //
+    @media all and (min-width: 569px) {
+      min-height: 220px;
+    }
+
+}
+
 article.node-proposal {
 
 	position: relative;
@@ -77,7 +89,7 @@ article.node-proposal {
 	div.heatmap {
 		position: relative;
 		@include box();
-		padding-bottom: 30px;
+		padding-bottom: 20px;
 		color: $white-font;
 	}
 
@@ -395,7 +407,7 @@ article.node-proposal {
 		// when more than one item in a row, apply min-height to the bubble
 		//
 		@media all and (min-width: 569px) {
-			min-height: 220px;
+			//min-height: 220px;
 		}
 
 		// submitted
@@ -494,7 +506,7 @@ article.node-proposal {
 	//
 	div.answered {
 		text-align: center;
-        margin-top: 30px;
+        margin-top: 10px;
 
 		div.municipal-response-short {
 			display: inline-block;

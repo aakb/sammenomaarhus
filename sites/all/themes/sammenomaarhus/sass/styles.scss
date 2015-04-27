@@ -687,6 +687,7 @@ div.button-menu {
   text-align: center;
 
   ul.menu {
+    padding: 0;
     display: inline-block;
 
     li {
@@ -694,6 +695,10 @@ div.button-menu {
       margin-left: 1.5em;
       list-style-image: none;
       list-style-type: none;
+    }
+
+    li:first-child {
+      margin-left: 0;
     }
 
     a {

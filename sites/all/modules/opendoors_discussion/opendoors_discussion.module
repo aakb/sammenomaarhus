@@ -199,13 +199,13 @@ function opendoors_discussion_block_view($delta = '') {
           'fragment' => 'pane-proposal-discussion-intro'
       );
       $links['featured'] = array(
-          'title' => t('Recommended'),
+          'title' => t('Most commented'),
           'path' => $path,
-          'query' => array('field_recommended_value' => '1', 'sort_by' => 'changed', 'sort_order' => 'DESC'),
+          'query' => array('sort_by' => 'comment_count', 'sort_order' => 'DESC'),
           'fragment' => 'pane-proposal-discussion-intro'
       );
       $links['hot'] = array(
-          'title' => t('Hot'),
+          'title' => t('Most Liked'),
           'path' => $path,
           'query' => array('sort_by' => 'field_hotness_value', 'sort_order' => 'DESC'),
           'fragment' => 'pane-proposal-discussion-intro'
@@ -220,11 +220,15 @@ function opendoors_discussion_block_view($delta = '') {
             'fragment' => 'pane-proposal-discussion-intro'
         );
       }
-    
+
+      $category_links = _opendoors_discussion_get_category_links();
+
       // Main filter links
       $primary_filters = '<ul class="primary-filters">';
       $secondary_filter = '';
       foreach($links as $key => $link) {
+        /*
+
         // Which query is currently active?
         $link_is_active = false;
         if (_opendoors_discussion_is_active_query($link['query'])) {
@@ -241,7 +245,13 @@ function opendoors_discussion_block_view($delta = '') {
         else if ($key == 'hot' && $link_is_active) {
           $secondary_filter = _opendoors_discussion_get_heatmap_legend();
         }
-        
+
+        */
+
+        $link_is_active = true;
+        $active_class = $link_is_active ? 'query-active' : '';
+        $secondary_filter = _opendoors_discussion_get_heatmap_legend();
+
         $link_rendered = l(
           $link['title'], 
           $link['path'], 
@@ -264,7 +274,7 @@ function opendoors_discussion_block_view($delta = '') {
       $search_filter = render($search_block['content']);
       
       $block['subject'] = '';
-      $block['content'] = $primary_filters . $search_filter . $secondary_filter;
+      $block['content'] = $category_links . $primary_filters . $search_filter . $secondary_filter;
       break;
       
     case 'proposal_add_form':
@@ -605,7 +615,7 @@ function _opendoors_discussion_get_category_filter() {
   foreach($voc_terms as $term) {
     $active_class = $term->tid == $active_tid ? 'active-term' : '';
     $link = l($term->name, $path, array(
-        'query' => array('field_category_tid' => $term->tid), 
+        'query' => array('field_category_tid' => $term->tid),
         'fragment' => 'pane-proposal-discussion-intro',
         'attributes' => array('class' => array($active_class)),
         ));
@@ -615,6 +625,30 @@ function _opendoors_discussion_get_category_filter() {
   
   return $category_filters;
 }
+
+
+/**
+ * Render links for proposal categories.
+ *
+ * @return string
+ *   Rendered html
+ */
+function _opendoors_discussion_get_category_links() {
+  $category_filters = '<ul class="secondary-filters categories">';
+  $vocabulary = taxonomy_vocabulary_machine_name_load('proposal_category');
+  $voc_terms = taxonomy_get_tree($vocabulary->vid, 0, null, true);
+  foreach($voc_terms as $term) {
+    $term_uri = taxonomy_term_uri($term);
+    $link = l($term->name, $term_uri['path'], array(
+      'attributes' => array('class' => array('active'),
+    )));
+    $category_filters .= '<li>' . $link . '</li>';
+  }
+  $category_filters .= '</ul>';
+
+  return $category_filters;
+}
+
 
 /**
  * Render heatmap legend.

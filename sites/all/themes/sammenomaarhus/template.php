@@ -197,3 +197,4 @@ function sammenomaarhus_stats_block($metrics) {
   return $output;
 }
 
+

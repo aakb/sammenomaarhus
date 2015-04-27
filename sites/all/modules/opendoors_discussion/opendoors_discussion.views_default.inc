@@ -272,6 +272,13 @@ function opendoors_discussion_views_default_views() {
   $handler->display->display_options['sorts']['changed']['field'] = 'changed';
   $handler->display->display_options['sorts']['changed']['exposed'] = TRUE;
   $handler->display->display_options['sorts']['changed']['expose']['label'] = 'Updated date';
+  /* Sort criterion: Indhold: Kommentarantal */
+  $handler->display->display_options['sorts']['comment_count']['id'] = 'comment_count';
+  $handler->display->display_options['sorts']['comment_count']['table'] = 'node_comment_statistics';
+  $handler->display->display_options['sorts']['comment_count']['field'] = 'comment_count';
+  $handler->display->display_options['sorts']['comment_count']['order'] = 'DESC';
+  $handler->display->display_options['sorts']['comment_count']['exposed'] = TRUE;
+  $handler->display->display_options['sorts']['comment_count']['expose']['label'] = 'Kommentarantal';
   /* Filter criterion: Indhold: Udgivet */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -388,6 +395,7 @@ function opendoors_discussion_views_default_views() {
     t('Post date'),
     t('Hotness'),
     t('Updated date'),
+    t('Kommentarantal'),
     t('Kategorie'),
     t('Hervorheben'),
     t('Is the logged in user'),
