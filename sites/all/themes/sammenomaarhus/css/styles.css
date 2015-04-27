@@ -1664,6 +1664,13 @@ header#header {
           border-radius: 5px;
           padding: 10px;
           opacity: 0.95; } }
+@media all and (max-width: 370px) {
+  #content div.button-menu ul.menu {
+    margin: 0; }
+    #content div.button-menu ul.menu li {
+      float: none;
+      margin-left: 0;
+      padding: 1em 0; } }
 a, a:visited {
   color: #b13a32;
   outline: none; }

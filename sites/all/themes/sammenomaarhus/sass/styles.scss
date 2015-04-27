@@ -298,7 +298,14 @@ header#header {
 	}
 }
 @media all and (max-width: 370px) {
-
+  #content div.button-menu ul.menu {
+    margin: 0;
+    li {
+      float: none;
+      margin-left: 0;
+      padding: 1em 0;
+    }
+  }
 }
 
 
