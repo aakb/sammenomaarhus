@@ -204,3 +204,17 @@ function sammenomaarhus_stats_block($metrics) {
 function asist_clean_views_pre_render(&$view)  {
   $view->set_title(t($view->get_title()));
 }
+
+
+/**
+ * Fix for AJAX fileupload error (https://www.drupal.org/node/1118114#comment-4575298)
+ *
+ * @param $form
+ * @param $form_state
+ * @param $form_id
+ */
+function sammenomaarhus_form_alter(&$form, &$form_state, $form_id) {
+  $files = (isset($form_state['build_info']['files'])) ? $form_state['build_info']['files'] : array();
+  $files[] = drupal_get_path('module', 'node') . '/node.pages.inc';
+  $form_state['build_info']['files'] = $files;
+}
