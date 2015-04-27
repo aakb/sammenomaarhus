@@ -1664,11 +1664,6 @@ header#header {
           border-radius: 5px;
           padding: 10px;
           opacity: 0.95; } }
-@media all and (max-width: 370px) {
-  header#header {
-    min-height: 150px; }
-    header#header img {
-      width: 210px; } }
 a, a:visited {
   color: #b13a32;
   outline: none; }
