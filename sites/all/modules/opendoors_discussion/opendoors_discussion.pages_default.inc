@@ -465,10 +465,12 @@ function opendoors_discussion_default_page_manager_pages() {
         0 => array(
           'name' => 'role',
           'settings' => array(
-            'rids' => array(),
+            'rids' => array(
+              0 => 1,
+            ),
           ),
           'context' => 'logged-in-user',
-          'not' => TRUE,
+          'not' => FALSE,
         ),
       ),
     );
@@ -499,7 +501,20 @@ function opendoors_discussion_default_page_manager_pages() {
     $pane->type = 'block';
     $pane->subtype = 'user_links-user_links';
     $pane->shown = TRUE;
-    $pane->access = array();
+    $pane->access = array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'role',
+          'settings' => array(
+            'rids' => array(
+              0 => 1,
+            ),
+          ),
+          'context' => 'logged-in-user',
+          'not' => FALSE,
+        ),
+      ),
+    );
     $pane->configuration = array(
       'override_title' => 0,
       'override_title_text' => '',
