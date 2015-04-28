@@ -15,8 +15,28 @@ function sammenomaarhus_custom_user_default_permissions() {
     'name' => 'administer EU Cookie Compliance popup',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Moderator' => 'Moderator',
     ),
     'module' => 'eu_cookie_compliance',
+  );
+
+  // Exported permission: 'administer url aliases'.
+  $permissions['administer url aliases'] = array(
+    'name' => 'administer url aliases',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'path',
+  );
+
+  // Exported permission: 'create url aliases'.
+  $permissions['create url aliases'] = array(
+    'name' => 'create url aliases',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'Moderator' => 'Moderator',
+    ),
+    'module' => 'path',
   );
 
   // Exported permission: 'display EU Cookie Compliance popup'.
