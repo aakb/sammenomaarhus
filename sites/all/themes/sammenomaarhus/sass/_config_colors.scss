@@ -1,0 +1,69 @@
+/* Page generals */
+body {
+  /* background: ; */
+  color: $font-body;
+}
+
+/* Filter bar links */
+div#pane-proposal-discussion-filter ul.primary-filters li a,
+div#pane-proposal-discussion-filter ul.primary-filters li span { color: $black-font; }
+
+div#pane-proposal-discussion-filter ul.primary-filters li a:hover,
+div#pane-proposal-discussion-filter ul.primary-filters li.query-active a,
+div#pane-proposal-discussion-filter ul.primary-filters li span:hover { color: $heatmap1; }
+
+/* Category Chooser background */
+div#edit-field-category div#edit-field-category-und {
+  background-color: $ocean;
+}
+/* Category Chooser + Filter bar category items */
+div#edit-field-category div.form-type-radio label,
+div#pane-proposal-discussion-filter ul.secondary-filters li a.active {
+  color: $white-font;
+  background-color: $gray-font;
+}
+div#edit-field-category div.form-type-radio label:hover, div#edit-field-category div.form-type-radio label:focus,
+div#pane-proposal-discussion-filter ul.secondary-filters li a:hover, div#pane-proposal-discussion-filter ul.secondary-filters li a:focus, div#pane-proposal-discussion-filter ul.secondary-filters li a.active-term {
+  background-color: $background-hover;
+}
+
+/* Main bubble */
+div.proposal-form
+{ background-color: $ocean; }
+
+/* Response bubble background color */
+body.node-type-proposal div.response-bubble-container, div#overlay div.response-bubble-container,
+div.response-bubble span.border-cover-snippet
+{
+  background-color: $heatmap0;
+}
+
+/* Heatmap elements */
+article.node-proposal.hotness-0   div.heatmap,
+.hotness-0   span.border-cover-snippet,
+div.heatmap-legend li.hotness-0   {
+  background-color: $heatmap0;
+}
+
+article.node-proposal.hotness-20  div.heatmap,
+.hotness-20  span.border-cover-snippet,
+div.heatmap-legend li.hotness-20  { background-color: $heatmap1; }
+article.node-proposal.hotness-40  div.heatmap,
+.hotness-40  span.border-cover-snippet,
+div.heatmap-legend li.hotness-40  { background-color: $heatmap2; }
+article.node-proposal.hotness-60  div.heatmap,
+.hotness-60  span.border-cover-snippet,
+div.heatmap-legend li.hotness-60  { background-color: $heatmap3; }
+article.node-proposal.hotness-80  div.heatmap,
+.hotness-80  span.border-cover-snippet,
+div.heatmap-legend li.hotness-80  { background-color: $heatmap4; }
+article.node-proposal.hotness-100 div.heatmap,
+.hotness-100 span.border-cover-snippet,
+div.heatmap-legend li.hotness-100 { background-color: $heatmap5; }
+
+article.node-proposal.hotness-0   div.field-name-field-category, article.node-proposal.hotness-0 div.field-name-field-category a { color: $heatmap0; }
+article.node-proposal.hotness-20  div.field-name-field-category, article.node-proposal.hotness-1 div.field-name-field-category a { color: $heatmap1; }
+article.node-proposal.hotness-40  div.field-name-field-category, article.node-proposal.hotness-2 div.field-name-field-category a { color: $heatmap2; }
+article.node-proposal.hotness-60  div.field-name-field-category, article.node-proposal.hotness-3 div.field-name-field-category a { color: $heatmap3; }
+article.node-proposal.hotness-80  div.field-name-field-category, article.node-proposal.hotness-4 div.field-name-field-category a { color: $heatmap4; }
+article.node-proposal.hotness-100 div.field-name-field-category, article.node-proposal.hotness-5 div.field-name-field-category a { color: $heatmap5; }

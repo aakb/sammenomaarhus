@@ -26,6 +26,8 @@
 
   <?php print $styles; ?>
 
+  <?php if(theme_get_setting('use_custom_colors')): ?>
+
   <!-- Custom colors, defined via theme-settings.php and sammenomaarhus.info -->
   <style>
 
@@ -65,8 +67,7 @@
 		}
 
     /* Main bubble */
-    div.proposal-form,
-    div.proposal-form div.form-textarea-wrapper:before
+    div.proposal-form
     { background-color: <?php print theme_get_setting('main_bubble_color'); ?>; }
 
     /* Response bubble background color */
@@ -103,9 +104,9 @@
     article.node-proposal.hotness-80  div.field-name-field-category, article.node-proposal.hotness-4 div.field-name-field-category a { color: <?php print theme_get_setting('heatmap_color_4'); ?>; }
     article.node-proposal.hotness-100 div.field-name-field-category, article.node-proposal.hotness-5 div.field-name-field-category a { color: <?php print theme_get_setting('heatmap_color_5'); ?>; }
 
-
-
   </style>
+
+  <?php endif; ?>
 
 
   <?php print $scripts; ?>

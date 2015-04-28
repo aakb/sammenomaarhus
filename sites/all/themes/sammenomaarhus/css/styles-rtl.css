@@ -1,8 +1,50 @@
+@charset "UTF-8";
 /**
  * @file
  * RTL companion for the styles.scss file.
  */
 /* Import Sass mixins, variables, Compass modules, etc. */
+/* Original colors
+$heatmap5: #ad003a;
+$heatmap5-light: #c64c75;
+$heatmap4: #990062;
+$heatmap4-light: #b74c91;
+$heatmap3: #480f6d;
+$heatmap3-light: #7f5799;
+$heatmap2: #1d1d68;
+$heatmap2-light: #606095;
+$heatmap1: #2a2d58;
+$heatmap1-light: #517495;
+$heatmap0: #157BB3;
+$heatmap0-light: #4c7f91;
+*/
+/*
+$heatmap5: #D03D1D;
+$heatmap5-light: lighten($heatmap5, 20%);
+$heatmap4: #ffa832;
+$heatmap4-light: lighten($heatmap4, 20%);
+$heatmap3: #ffb76d;
+$heatmap3-light: lighten($heatmap3, 20%);
+$heatmap2: #ffbd73;
+$heatmap2-light: lighten($heatmap2, 20%);
+$heatmap1: #ffbc35;
+$heatmap1-light: lighten($heatmap1, 20%);
+$heatmap0: #ffbb32;
+$heatmap0-light: lighten($heatmap0, 20%);
+*/
+/*
+Mange svar
+
+#ff801f
+#ffa832
+#ffb76d
+#ffbd73
+#ffbc35
+#ffbb32
+
+
+Få svar
+*/
 .clearfix:after {
   content: "";
   display: table;
@@ -10,11 +52,11 @@
 
 .category-label {
   display: inline-block;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
   padding: 3px 10px;
-  font-family: "Open Sans";
+  font-family: "PT Sans", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-size: 0.875em;
   line-height: 1.4em;
   opacity: 0.9; }

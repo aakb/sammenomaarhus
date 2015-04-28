@@ -37,6 +37,18 @@ $indentation : 40px;
 //
 // Proposal item
 //
+
+.front article.node-proposal div.bubble {
+
+    //
+    // when more than one item in a row, apply min-height to the bubble
+    //
+    @media all and (min-width: 569px) {
+      min-height: 220px;
+    }
+
+}
+
 article.node-proposal {
 
 	position: relative;
@@ -51,6 +63,11 @@ article.node-proposal {
 
 		div.heatmap {
 			@include single-transition( all, 0.5s );
+
+          span.category-label {
+            padding-left: 0;
+          }
+
 		}
 
 		&:hover div.heatmap {
@@ -72,11 +89,45 @@ article.node-proposal {
 	div.heatmap {
 		position: relative;
 		@include box();
-		padding-bottom: 30px;
+		padding-bottom: 20px;
 		color: $white-font;
 	}
 
-	//
+  //
+  // Heatmap title !!!
+  //
+  div.heatmap.detail-view h2 {
+    margin-left: 10px;
+    margin-top: 0.5em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  //
+  // Heatmap title !!!
+  //
+  div.heatmap.teaser-view h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 10px;
+  }
+
+  //
+  // Submitted styling !!!
+  //
+  div.heatmap.detail-view .submitted {
+    margin-left: 40px;
+
+    a {
+      color: $white-font;
+    }
+
+  }
+
+
+  //
 	// header with: category, count of comments and count of votings
 	//
 	header {
@@ -127,11 +178,11 @@ article.node-proposal {
 					list-style-type: none;
 					display: inline-block;
 					margin-bottom: 15px;
-					font-family: "Open Sans";
+					font-family: $font-header;
 					line-height: 15px;
 					a {
 						text-decoration: none;
-						color: $gray-font;
+						color: $white-font;
 						//						@include single-transition( all, 0.3s );
 						&:hover, &:focus {
 							//							@include single-transition( all, 0.1s );
@@ -243,7 +294,7 @@ article.node-proposal {
 			li {
 				list-style-type: none;
 				display: inline-block;
-				font-family: "Open Sans";
+				font-family: $font-header;
 				line-height: 15px;
 				padding: 0 10px;
 				a {
@@ -349,14 +400,14 @@ article.node-proposal {
 //		border: 2px dashed $white-font;
 		border: 2px dashed rgba(255,255,255,0.5);
 		padding: 15px;
-		margin-top: 20px;
+		margin-top: 15px;
 		margin-bottom: 15px;
 
 		//
 		// when more than one item in a row, apply min-height to the bubble
 		//
 		@media all and (min-width: 569px) {
-			min-height: 220px;
+			//min-height: 220px;
 		}
 
 		// submitted
@@ -376,7 +427,8 @@ article.node-proposal {
 		// regular bubble text
 		//
 		p {
-			font-size: px2em(20px);
+			//font-size: px2em(20px);
+          font-size: 1em;
 		}
 		a {
 			color: $white-font;
@@ -454,7 +506,7 @@ article.node-proposal {
 	//
 	div.answered {
 		text-align: center;
-        margin-top: 30px;
+        margin-top: 10px;
 
 		div.municipal-response-short {
 			display: inline-block;
@@ -492,7 +544,9 @@ article.node-proposal {
 // Styles for Node detail view only ( Overlay ) ###############################################################################
 // Styles for Node detail view only ( Overlay ) ###############################################################################
 //
-
+div#overlay {
+  @include box(white);
+}
 
 body.node-type-proposal,
 div#overlay {
@@ -501,7 +555,7 @@ div#overlay {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: $vertical-margin;
-	@include box(white);
+
 	opacity: 0.95;
 
 	//
@@ -548,7 +602,7 @@ div#overlay {
 			padding-right: 25px;
 			li a {
 				background: $black-font;
-				color: $gray-font;
+				color: $white-font;
 				&:hover, &:focus {
 					color: $white-font;
 				}
@@ -563,7 +617,7 @@ div#overlay {
 		margin-right: $indentation;
 
 		div.field-name-field-category {
-			margin-left: $indentation;
+			margin-left: 10px;
 		}
 
 
@@ -710,6 +764,10 @@ div#overlay {
 
 		}
 
+        div.response {
+          text-align: right;
+          margin-right: 45px;
+        }
 
 	}
 
@@ -810,6 +868,16 @@ div#overlay {
 				}
 			}
 
+          //
+          // comments header
+          //
+          header {
+            p.submitted {
+              margin: -1em 1em 2.5em;
+              text-align: right;
+            }
+          }
+
 			div.comment-bubble {
 
 				position: relative;
@@ -823,14 +891,6 @@ div#overlay {
 					bottom: -35px;
 				}
 
-				//
-				// comments header
-				//
-				header {
-					p.submitted {
-//						margin: 0 0 0.5em;
-					}
-				}
 
 				span.rdf-meta {
 					display: none;
@@ -865,17 +925,7 @@ div#overlay {
 	margin-top: $vertical-margin;
 }
 
-body.node-type-proposal header#header {
-	margin-top: -15px;
-	margin-left: $zen-gutter-width / 2;
-	margin-right: $zen-gutter-width / 2;
-}
-
 div#overlay-container body {
 	padding-top: $vertical-margin;
-}
-
-body.node-type-proposal {
-	background: $gray-background;
 }
 
