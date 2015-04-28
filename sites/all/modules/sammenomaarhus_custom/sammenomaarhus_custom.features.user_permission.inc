@@ -20,6 +20,15 @@ function sammenomaarhus_custom_user_default_permissions() {
     'module' => 'eu_cookie_compliance',
   );
 
+  // Exported permission: 'administer pathauto'.
+  $permissions['administer pathauto'] = array(
+    'name' => 'administer pathauto',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'pathauto',
+  );
+
   // Exported permission: 'administer url aliases'.
   $permissions['administer url aliases'] = array(
     'name' => 'administer url aliases',
@@ -50,6 +59,15 @@ function sammenomaarhus_custom_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'eu_cookie_compliance',
+  );
+
+  // Exported permission: 'notify of path changes'.
+  $permissions['notify of path changes'] = array(
+    'name' => 'notify of path changes',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'pathauto',
   );
 
   return $permissions;
