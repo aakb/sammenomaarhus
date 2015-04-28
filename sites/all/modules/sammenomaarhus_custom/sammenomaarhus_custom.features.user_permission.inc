@@ -15,8 +15,37 @@ function sammenomaarhus_custom_user_default_permissions() {
     'name' => 'administer EU Cookie Compliance popup',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Moderator' => 'Moderator',
     ),
     'module' => 'eu_cookie_compliance',
+  );
+
+  // Exported permission: 'administer pathauto'.
+  $permissions['administer pathauto'] = array(
+    'name' => 'administer pathauto',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'pathauto',
+  );
+
+  // Exported permission: 'administer url aliases'.
+  $permissions['administer url aliases'] = array(
+    'name' => 'administer url aliases',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'path',
+  );
+
+  // Exported permission: 'create url aliases'.
+  $permissions['create url aliases'] = array(
+    'name' => 'create url aliases',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'Moderator' => 'Moderator',
+    ),
+    'module' => 'path',
   );
 
   // Exported permission: 'display EU Cookie Compliance popup'.
@@ -30,6 +59,15 @@ function sammenomaarhus_custom_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'eu_cookie_compliance',
+  );
+
+  // Exported permission: 'notify of path changes'.
+  $permissions['notify of path changes'] = array(
+    'name' => 'notify of path changes',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'pathauto',
   );
 
   return $permissions;
