@@ -30,11 +30,13 @@
 // Import webfonts
 //
 //'Open Sans'
-@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+//@import url('http://fonts.googleapis.com/css?family=Open+Sans');
 //'Fjord One'
-@import url('http://fonts.googleapis.com/css?family=Fjord+One');
+//@import url('http://fonts.googleapis.com/css?family=Fjord+One');
 //'FontAwesome'
 @import url('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
+
+@import url('http://fonts.googleapis.com/css?family=PT+Sans');
 
 
 //
@@ -62,10 +64,16 @@ $zen-gutter-width:  30px;
 //
 body {
 	// background: $gray-background; // Set through custom theme variables via theme-settings.php + sammenomaarhus.info
-	font-family: "Fjord One";
+	font-family: $font-body;
+    font-size: 0.9em;
     background-color: #ffffff;
     background-image: url('../images/back-flat-05-SH-1200x1200.png');
 }
+
+h1, h2, h3, h4, h5, h6, label {
+  font-family: $font-header;
+}
+
 //
 // Regular pages
 //
@@ -89,20 +97,8 @@ header#header {
 	min-height: 75px;
     background-color: #FFF;
 
-	@media all and (max-width: 1000px) {
-		img.header__logo-image {
-			 max-width: 270px;
-		}
-	}
-	@media all and (max-width: 640px) {
-		min-height: 230px;
-	}
-	@media all and (max-width: 480px) {
-		min-height: 260px;
-	}
-
 	// The configurable header background image is set in html.tpl.php
-//	background: url(../images/header_bg-tile.png);
+    // background: url(../images/header_bg-tile.png);
 
 	//
 	// Logo
@@ -167,7 +163,6 @@ header#header {
 					color: #000000;
 					text-decoration: none;
 					background: #b2b2b2;
-					opacity: 0.8;
 					@include single-transition( all, 0.3s );
 
 					&:focus, &:hover {
@@ -178,13 +173,13 @@ header#header {
 				}
 			}
 			li.first a {
-				@include border-top-left-radius(10px);
-				@include border-bottom-left-radius(10px);
+				@include border-top-left-radius(2px);
+				@include border-bottom-left-radius(2px);
 				padding-left: 15px;
 			}
 			li.last a {
-				@include border-top-right-radius(10px);
-				@include border-bottom-right-radius(10px);
+				@include border-top-right-radius(2px);
+				@include border-bottom-right-radius(2px);
 				padding-right: 15px;
 			}
 
@@ -197,12 +192,12 @@ header#header {
 
 		}
 		ul.menu {
+          margin-left: 1px;
 			li a {
 				background: $highlight;
 				color: white;
 				&:hover, &:focus {
 					opacity: 1;
-//					background: $highlight-dark;
 					background: darken($highlight, 10%);
 				}
 			}
@@ -216,8 +211,6 @@ header#header {
 //
 @media all and (max-width: 840px) {
 	header#header {
-
-		min-height: 150px;
 
 		//
 		// Icon for toggling nav
@@ -279,7 +272,6 @@ header#header {
 								display: block;
 								@include border-radius($border-radius);
 								padding: 10px;
-								opacity: 0.95;
 							}
 						}
 					}
@@ -306,13 +298,14 @@ header#header {
 	}
 }
 @media all and (max-width: 370px) {
-	header#header {
-		min-height: 150px;
-		img {
-			width: 210px;
-		}
-
-	}
+  #content div.button-menu ul.menu {
+    margin: 0;
+    li {
+      float: none;
+      margin-left: 0;
+      padding: 1em 0;
+    }
+  }
 }
 
 
@@ -673,6 +666,61 @@ body.page-user-edit {
 	}
 }
 
+div.not-logged-in {
+
+  @include zen-clear();
+  margin-right: $zen-gutter-width / 2;
+  margin-left: $zen-gutter-width / 2;
+
+  margin-bottom: $vertical-margin;
+
+  text-align: center;
+  font-size: 2em;
+}
+
+div.button-menu {
+  @include zen-clear();
+  margin-right:  $zen-gutter-width / 2;
+  margin-left:  $zen-gutter-width / 2;
+
+  margin-bottom: $vertical-margin;
+
+  text-align: center;
+
+  ul.menu {
+    padding: 0;
+    display: inline-block;
+
+    li {
+      float: left;
+      margin-left: 1.5em;
+      list-style-image: none;
+      list-style-type: none;
+    }
+
+    li:first-child {
+      margin-left: 0;
+    }
+
+    a {
+      font-size: 1.2em 1.5em;
+      font-family: $font-header;
+      background-color: $highlight;
+      color: $white-font;
+      padding: 1em 40px 1em 1em;
+      border-radius: $border-radius;
+      text-decoration: none;
+      //background-image: url("../images/arrow-right-white.png");
+      background: $highlight url("../images/arrow-right-white.png") no-repeat right 10px center;
+      //@include button-submit-huge( $white-font, $highlight, white, $gray-dark, "../images/arrow-right-white.png", "../images/arrow-right-white.png" );
+    }
+
+    a:hover, a:active {
+      background-color: $highlight-dark;
+    }
+  }
+}
+
 
 
 //
@@ -687,4 +735,10 @@ body.page-user-edit {
 // Page delayed ownership
 //
 @import 'pages/page-delayed-ownership-feedback';
+//
+// Default colors
+//
+@import 'config_colors';
+
+
 

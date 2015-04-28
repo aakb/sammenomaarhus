@@ -93,9 +93,9 @@
 //
 .category-label {
 	display: inline-block;
-	@include border-radius($border-radius-large);
+	@include border-radius($border-radius);
 	padding: 3px 10px;
-	font-family: "Open Sans";
+	font-family: $font-header;
 	font-size: px2em(14px);
 	line-height: 1.4em;
 	opacity: 0.9;
