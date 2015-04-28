@@ -67,7 +67,7 @@ stylesheets[all][] = css/no_sass.css
 
 ; Optionally add some JavaScripts to your theme.
 
-scripts[] = js/script.js
+; scripts[] = js/script.js
 
 
 
@@ -88,7 +88,6 @@ scripts[] = js/script.js
 
 regions[header]         = Header
 regions[navigation]     = Navigation bar
-regions[navigation-butons]        = Frontpage Navigation Buttons
 regions[secondary_navigation]     = Secondary navigation bar
 regions[highlighted]    = Highlighted
 regions[help]           = Help
@@ -158,9 +157,6 @@ settings[zen_wireframes]           = 0
 
 ; Header background image
 settings[header_background_1] = true
-
-; Use custom colors
-settings[use_custom_colors] = 0
 
 ; Basic colors
 settings[text_color] = "#000"

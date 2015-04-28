@@ -79,7 +79,7 @@ if ( isset($view->row_index) ){
 
       ?>
 
-      <h3><?php print render($content['field_serial']); ?>. <?php print render($node->title); ?></h3>
+
 
       <div class="bubble bubble-teaser">
         <span class="border-cover-snippet"></span>
@@ -160,7 +160,6 @@ else:
 
       <?php
       // We hide the comments and links now so that we can render them later.
-      hide($content['field_serial']);
       hide($content['comments']);
       hide($content['links']);
       hide($content['share_links']);
@@ -172,20 +171,16 @@ else:
       hide($content['field_municipal_response_author']);
       ?>
 
-      <h2><?php print render($content['field_serial']); ?>. <?php print render($node->title); ?></h2>
-
       <div class="bubble bubble-detail-view">
         <span class="border-cover-snippet"></span>
-
+        <?php if ($display_submitted): ?>
+          <div class="submitted">
+            <?php print $user_picture; ?>
+            <a href="<?php print $node_url; ?>"><?php print $submitted; ?></a>
+          </div>
+        <?php endif; ?>
         <?php print render($content); ?>
       </div>
-
-      <?php if ($display_submitted): ?>
-        <div class="submitted">
-          <?php print $user_picture; ?>
-          <a href="<?php print $node_url; ?>"><?php print $submitted; ?></a>
-        </div>
-      <?php endif; ?>
 
     </div><!-- /.heatmap.detail-view -->
 
@@ -203,7 +198,7 @@ else:
       </div>
     </div>
 
-    <?php if( sizeof($field_municipal_response) > 0 ): ?>
+
 
     <div class="response-bubble-container">
 
@@ -211,7 +206,7 @@ else:
       <div class="answered">
         <?php print render($content['municipal_response_short']); ?>
         <?php print render($content['field_municipal_response_author']); ?>
-        <?php print render($content['field_municipal_response_date']); ?>
+        <?php print render($content['field_municipal_response_date']); ?>        
       </div>
 
       <?php
@@ -230,13 +225,11 @@ else:
         endif;
         ?>
       </div><!-- /.response-bubble -->
-        <div class="response"><?php echo t("Response from the municipality"); ?></div>
       <?php
       endif;
       ?>
     </div><!-- /.response-bubble-container -->
 
-    <?php endif; ?>
 
   </article>
 

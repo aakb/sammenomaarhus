@@ -42,12 +42,6 @@ $form['theme_settings']['header_background_1'] = array(
 		'#default_value' => theme_get_setting('header_background_1'),
 );
 
-$form['theme_settings']['use_custom_colors'] = array(
-  '#type' => 'checkbox',
-  '#title' => t('Use custom theme colors'),
-  '#default_value' => theme_get_setting('use_custom_colors'),
-);
-
 
 
 // Configurable theme colors

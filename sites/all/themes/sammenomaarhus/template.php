@@ -86,7 +86,7 @@ function sammenomaarhus_preprocess_node_proposal(&$vars, $hook) {
   // Add css class based on hotness
   $hotness = $vars['content']['field_hotness'][0]['#markup'];
   $vars['classes_array'][] = 'hotness-' . $hotness;
-
+  
   // In teaser view: Remove link tags from body because the full teaser view is a link
   if ($vars['teaser']) {
     $vars['content']['body'][0]['#markup'] = strip_tags( $vars['content']['body'][0]['#markup'], "<b><strong><i><em><ul><ol><li>" );
@@ -197,24 +197,3 @@ function sammenomaarhus_stats_block($metrics) {
   return $output;
 }
 
-/**
- * Allow to translate views page title
- * @param $view
- */
-function asist_clean_views_pre_render(&$view)  {
-  $view->set_title(t($view->get_title()));
-}
-
-
-/**
- * Fix for AJAX fileupload error (https://www.drupal.org/node/1118114#comment-4575298)
- *
- * @param $form
- * @param $form_state
- * @param $form_id
- */
-function sammenomaarhus_form_alter(&$form, &$form_state, $form_id) {
-  $files = (isset($form_state['build_info']['files'])) ? $form_state['build_info']['files'] : array();
-  $files[] = drupal_get_path('module', 'node') . '/node.pages.inc';
-  $form_state['build_info']['files'] = $files;
-}

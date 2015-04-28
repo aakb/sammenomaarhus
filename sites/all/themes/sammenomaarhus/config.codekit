@@ -40,17 +40,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/aaklogosubsite.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 3927,
-		"inputAbbreviatedPath": "\/images\/aaklogosubsite.png",
-		"outputAbbreviatedPath": "\/images\/aaklogosubsite.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/arrow-right-red.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -102,83 +91,6 @@
 		"initialSize": 121,
 		"inputAbbreviatedPath": "\/images\/bg_tile_white10.png",
 		"outputAbbreviatedPath": "\/images\/bg_tile_white10.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/bubble-bottom-bighook-answer.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 734,
-		"inputAbbreviatedPath": "\/images\/bubble-bottom-bighook-answer.png",
-		"outputAbbreviatedPath": "\/images\/bubble-bottom-bighook-answer.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/bubble-bottom-bighook-heatmap0.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 853,
-		"inputAbbreviatedPath": "\/images\/bubble-bottom-bighook-heatmap0.png",
-		"outputAbbreviatedPath": "\/images\/bubble-bottom-bighook-heatmap0.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/bubble-bottom-bighook-heatmap1.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 855,
-		"inputAbbreviatedPath": "\/images\/bubble-bottom-bighook-heatmap1.png",
-		"outputAbbreviatedPath": "\/images\/bubble-bottom-bighook-heatmap1.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/bubble-bottom-bighook-heatmap2.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 854,
-		"inputAbbreviatedPath": "\/images\/bubble-bottom-bighook-heatmap2.png",
-		"outputAbbreviatedPath": "\/images\/bubble-bottom-bighook-heatmap2.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/bubble-bottom-bighook-heatmap3.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 859,
-		"inputAbbreviatedPath": "\/images\/bubble-bottom-bighook-heatmap3.png",
-		"outputAbbreviatedPath": "\/images\/bubble-bottom-bighook-heatmap3.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/bubble-bottom-bighook-heatmap4.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 853,
-		"inputAbbreviatedPath": "\/images\/bubble-bottom-bighook-heatmap4.png",
-		"outputAbbreviatedPath": "\/images\/bubble-bottom-bighook-heatmap4.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/bubble-bottom-bighook-heatmap5.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 848,
-		"inputAbbreviatedPath": "\/images\/bubble-bottom-bighook-heatmap5.png",
-		"outputAbbreviatedPath": "\/images\/bubble-bottom-bighook-heatmap5.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -678,6 +590,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8557,
+		"inputAbbreviatedPath": "\/logo.png",
+		"outputAbbreviatedPath": "\/logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/sass-extensions\/zen-grids\/stylesheets\/_zen.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -1115,22 +1038,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/sass\/_config_colors.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/_config_colors.scss",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
 	"\/sass\/_init.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -1453,15 +1360,6 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/templates\/comment.tpl.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/templates\/field--field-serial.tpl.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/templates\/field--field-serial.tpl.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
