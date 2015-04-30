@@ -29,7 +29,11 @@ div#pane-proposal-discussion-filter ul.secondary-filters li a:hover, div#pane-pr
 
 /* Main bubble */
 div.proposal-form
-{ background-color: $ocean; }
+{ background-color: $ocean;
+  h1, h2, h3, h4, h5, h6, label {
+    color: $white-font;
+  }
+}
 
 /* Response bubble background color */
 body.node-type-proposal div.response-bubble-container, div#overlay div.response-bubble-container,

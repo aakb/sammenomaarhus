@@ -3557,6 +3557,8 @@ div#pane-proposal-discussion-filter ul.secondary-filters li a:hover, div#pane-pr
 /* Main bubble */
 div.proposal-form {
   background-color: #157BB3; }
+  div.proposal-form h1, div.proposal-form h2, div.proposal-form h3, div.proposal-form h4, div.proposal-form h5, div.proposal-form h6, div.proposal-form label {
+    color: #f2f2f2; }
 
 /* Response bubble background color */
 body.node-type-proposal div.response-bubble-container, div#overlay div.response-bubble-container,
