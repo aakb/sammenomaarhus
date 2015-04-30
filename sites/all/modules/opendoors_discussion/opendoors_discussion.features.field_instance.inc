@@ -126,7 +126,7 @@ function opendoors_discussion_field_default_field_instances() {
     'settings' => array(
       'description_field' => 0,
       'file_directory' => '',
-      'file_extensions' => 'txt pdf doc docx',
+      'file_extensions' => 'txt pdf doc docx ppt pptx xls xlsx jpg jpeg png tiff tif',
       'max_filesize' => '',
       'user_register_form' => FALSE,
     ),
