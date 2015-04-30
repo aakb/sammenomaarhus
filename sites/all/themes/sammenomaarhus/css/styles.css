@@ -2695,10 +2695,10 @@ div#pane-proposal-discussion-filter {
       display: inline-block;
       font-size: 1.125em; }
     div#pane-proposal-discussion-filter div.heatmap-legend span.cold {
-      color: #066192;
+      color: #157BB3;
       padding-right: 10px; }
     div#pane-proposal-discussion-filter div.heatmap-legend span.hot {
-      color: #7D1C00;
+      color: #157BB3;
       padding-left: 10px; }
     div#pane-proposal-discussion-filter div.heatmap-legend li {
       position: relative;
@@ -2942,12 +2942,14 @@ article.node-proposal {
     padding-bottom: 20px;
     color: #f2f2f2; }
   article.node-proposal div.heatmap.detail-view h2 {
+    color: #f2f2f2;
     margin-left: 10px;
     margin-top: 0.5em;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; }
   article.node-proposal div.heatmap.teaser-view h3 {
+    color: #f2f2f2;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -3536,7 +3538,7 @@ div#pane-proposal-discussion-filter ul.primary-filters li span {
 div#pane-proposal-discussion-filter ul.primary-filters li a:hover,
 div#pane-proposal-discussion-filter ul.primary-filters li.query-active a,
 div#pane-proposal-discussion-filter ul.primary-filters li span:hover {
-  color: #066192; }
+  color: #157BB3; }
 
 /* Category Chooser background */
 div#edit-field-category div#edit-field-category-und {
@@ -3570,42 +3572,42 @@ div.heatmap-legend li.hotness-0 {
 article.node-proposal.hotness-20 div.heatmap,
 .hotness-20 span.border-cover-snippet,
 div.heatmap-legend li.hotness-20 {
-  background-color: #066192; }
+  background-color: #157BB3; }
 
 article.node-proposal.hotness-40 div.heatmap,
 .hotness-40 span.border-cover-snippet,
 div.heatmap-legend li.hotness-40 {
-  background-color: #054C72; }
+  background-color: #157BB3; }
 
 article.node-proposal.hotness-60 div.heatmap,
 .hotness-60 span.border-cover-snippet,
 div.heatmap-legend li.hotness-60 {
-  background-color: #CB360B; }
+  background-color: #157BB3; }
 
 article.node-proposal.hotness-80 div.heatmap,
 .hotness-80 span.border-cover-snippet,
 div.heatmap-legend li.hotness-80 {
-  background-color: #A62500; }
+  background-color: #157BB3; }
 
 article.node-proposal.hotness-100 div.heatmap,
 .hotness-100 span.border-cover-snippet,
 div.heatmap-legend li.hotness-100 {
-  background-color: #7D1C00; }
+  background-color: #157BB3; }
 
 article.node-proposal.hotness-0 div.field-name-field-category, article.node-proposal.hotness-0 div.field-name-field-category a {
   color: #157BB3; }
 
 article.node-proposal.hotness-20 div.field-name-field-category, article.node-proposal.hotness-1 div.field-name-field-category a {
-  color: #066192; }
+  color: #157BB3; }
 
 article.node-proposal.hotness-40 div.field-name-field-category, article.node-proposal.hotness-2 div.field-name-field-category a {
-  color: #054C72; }
+  color: #157BB3; }
 
 article.node-proposal.hotness-60 div.field-name-field-category, article.node-proposal.hotness-3 div.field-name-field-category a {
-  color: #CB360B; }
+  color: #157BB3; }
 
 article.node-proposal.hotness-80 div.field-name-field-category, article.node-proposal.hotness-4 div.field-name-field-category a {
-  color: #A62500; }
+  color: #157BB3; }
 
 article.node-proposal.hotness-100 div.field-name-field-category, article.node-proposal.hotness-5 div.field-name-field-category a {
-  color: #7D1C00; }
+  color: #157BB3; }

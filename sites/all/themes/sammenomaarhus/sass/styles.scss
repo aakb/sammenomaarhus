@@ -500,6 +500,7 @@ body.node-type-page div#main {
 body.page-newsletter div#main {
 	@include zen-grid-item-base();
 
+
 	input#edit-unsubscribe,
 	input#edit-subscribe {
 		@include button-submit-normal( $highlight, white, white, $gray-dark );
