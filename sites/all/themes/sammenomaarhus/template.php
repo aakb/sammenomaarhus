@@ -84,7 +84,20 @@ function sammenomaarhus_preprocess_node_pane_embedded(&$vars, $hook) {
 
 function sammenomaarhus_preprocess_node_proposal(&$vars, $hook) {
   // Add css class based on hotness
-  $hotness = $vars['content']['field_hotness'][0]['#markup'];
+  //$hotness = $vars['content']['field_hotness'][0]['#markup'];
+
+
+  $categories = field_get_items('node', $vars['node'], 'field_category');
+
+  if ($categories) {
+    $cat_no = $categories[0]['tid'];
+  } else {
+    $cat_no = 0;
+  }
+
+  // Ugly last minute hack to use heatmap colors to mark categories :-/
+  $hotness = $cat_no * 20;
+
   $vars['classes_array'][] = 'hotness-' . $hotness;
 
   // In teaser view: Remove link tags from body because the full teaser view is a link

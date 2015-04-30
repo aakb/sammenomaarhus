@@ -250,7 +250,7 @@ function opendoors_discussion_block_view($delta = '') {
 
         $link_is_active = true;
         $active_class = $link_is_active ? 'query-active' : '';
-        $secondary_filter = _opendoors_discussion_get_heatmap_legend();
+        //$secondary_filter = _opendoors_discussion_get_heatmap_legend();
 
         $link_rendered = l(
           $link['title'], 
@@ -274,7 +274,7 @@ function opendoors_discussion_block_view($delta = '') {
       $search_filter = render($search_block['content']);
       
       $block['subject'] = '';
-      $block['content'] = $primary_filters . $search_filter . $secondary_filter;
+      $block['content'] = $primary_filters . $search_filter;
       break;
       
     case 'proposal_add_form':
