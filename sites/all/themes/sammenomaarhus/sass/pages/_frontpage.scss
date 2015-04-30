@@ -9,7 +9,7 @@ div.welcome-text {
   margin-right:  $zen-gutter-width / 2;
   margin-left:  $zen-gutter-width / 2;
 
-  margin-bottom: $vertical-margin;
+  margin-bottom: $vertical-margin / 4;
 
   // @include zen-grid-container();
   // @include zen-nested-container();
@@ -476,16 +476,109 @@ div.front-stats-block {
 
 
 
+div.pane-menu-menu-proposal-category-menu {
+  @include zen-grid-item(6, 7);
+
+  text-align: right;
+
+  h2 {
+    font-size: 1.2em;
+    display: inline-block;
+    line-height: 24px;
+    margin: 1em 0.5em;
+    vertical-align: top;
+    font-weight: bold;
+  }
+
+  ul.menu {
+    padding: 0;
+    display: inline-block;
+
+    li {
+      float: left;
+      margin-left: 1.2em;
+      list-style-image: none;
+      list-style-type: none;
+    }
+
+    li:first-child {
+      margin-left: 0;
+    }
+
+    a {
+      font-size: 1em;
+      font-family: $font-header;
+      background-color: $highlight;
+      color: $white-font;
+      padding: 0.8em;
+      border-radius: $border-radius;
+      text-decoration: none;
+    }
+
+    a:hover, a:active {
+      background-color: $highlight-dark;
+    }
+  }
+}
+
+@media all and (max-width:960px) {
+  div.pane-menu-menu-proposal-category-menu {
+    @include zen-clear();
+    @include zen-grid-item(12, 1);
+  }
+}
+
+@media all and (max-width:500px) {
+  div.pane-menu-menu-proposal-category-menu {
+    h2 {
+      display: block;
+      margin: 0;
+    }
+  }
+}
+
+@media all and (max-width:380px) {
+  div.pane-menu-menu-proposal-category-menu {
+    h2, ul {
+      margin: 0.5em 0;
+    }
+    ul.menu {
+      a {
+        font-size: 0.8em;
+        padding: 0.7em;
+      }
+    }
+  }
+}
+
+@media all and (max-width:319px) {
+  div.pane-menu-menu-proposal-category-menu {
+    ul.menu {
+      a {
+        padding: 0.4em;
+      }
+    }
+  }
+}
+
+
+
 //
 // Filter bar (All, Recommended, Hot, Search)
 //
 div#pane-proposal-discussion-filter {
-
+  @include zen-clear();
   @include zen-grid-item(12, 1);
 
   margin-top: 12px;
   @extend .clearfix;
   // margin-bottom: $vertical-margin;
+
+
+  h2 {
+    display: inline-block;
+    float: left;
+  }
 
   //
   // primary filters "All", "Recommended", "Hot", "Mine")
@@ -613,6 +706,7 @@ div#pane-proposal-discussion-filter {
   // Heatmap legend (Cold, 0, 20, 40, 60, 80, 100, Hot)
   //
   div.heatmap-legend {
+    text-align: right;
 
     float: right;
 
@@ -663,8 +757,7 @@ div#pane-proposal-discussion-filter {
   // secondary filters ( categories)
   //
   ul.secondary-filters {
-    display: block;
-    float: left;
+    display: inline-block;
     margin: 0;
     min-height: 80px;
     padding: 0 0 15px 0;
@@ -672,7 +765,7 @@ div#pane-proposal-discussion-filter {
     li {
       display: inline-block;
       list-style-type: none;
-      margin-right: 15px;
+      margin-left: 15px;
       margin-bottom: 10px;
       float: left;
 
@@ -710,7 +803,7 @@ div#pane-proposal-discussion-filter {
     @include zen-grid-item(12, 1);
 
     ul.primary-filters {
-      float: left;
+      margin-right: 3em;
       li {
         margin-left: 0;
         margin-right: 15px;

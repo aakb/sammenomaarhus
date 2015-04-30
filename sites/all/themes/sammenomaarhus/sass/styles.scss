@@ -71,6 +71,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, label {
+  color: rgb(42, 45, 88);
   font-family: $font-header;
 }
 
@@ -297,13 +298,17 @@ header#header {
 		}
 	}
 }
-@media all and (max-width: 370px) {
-  #content div.button-menu ul.menu {
-    margin: 0;
-    li {
-      float: none;
-      margin-left: 0;
-      padding: 1em 0;
+@media all and (max-width: 380px) {
+  #content div.button-menu {
+    text-align: center;
+
+    ul.menu {
+      margin: 0;
+      li {
+        float: none;
+        margin-left: 0;
+        padding: 1em 0;
+      }
     }
   }
 }
@@ -680,12 +685,9 @@ div.not-logged-in {
 
 div.button-menu {
   @include zen-clear();
-  margin-right:  $zen-gutter-width / 2;
-  margin-left:  $zen-gutter-width / 2;
+  @include zen-grid-item(6, 1);
 
-  margin-bottom: $vertical-margin;
-
-  text-align: center;
+  margin-bottom: $vertical-margin / 4;
 
   ul.menu {
     padding: 0;
@@ -693,7 +695,7 @@ div.button-menu {
 
     li {
       float: left;
-      margin-left: 1.5em;
+      margin-left: 1.2em;
       list-style-image: none;
       list-style-type: none;
     }
@@ -703,11 +705,11 @@ div.button-menu {
     }
 
     a {
-      font-size: 1.2em 1.5em;
+      font-size: 1em;
       font-family: $font-header;
       background-color: $highlight;
       color: $white-font;
-      padding: 1em 40px 1em 1em;
+      padding: 0.8em 40px 0.8em 0.8em;
       border-radius: $border-radius;
       text-decoration: none;
       //background-image: url("../images/arrow-right-white.png");
@@ -722,6 +724,23 @@ div.button-menu {
 }
 
 
+@media all and (max-width:960px) {
+  div.button-menu {
+    @include zen-clear();
+    @include zen-grid-item(12, 1);
+  }
+}
+
+@media all and (max-width:960px) {
+  div.button-menu {
+
+  }
+}
+
+body.not-front div.button-menu {
+  @include zen-grid-item(12, 1);
+  text-align: center;
+}
 
 //
 // Frontpage styles
