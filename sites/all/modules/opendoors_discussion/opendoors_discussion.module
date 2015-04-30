@@ -221,7 +221,7 @@ function opendoors_discussion_block_view($delta = '') {
         );
       }
 
-      $category_links = _opendoors_discussion_get_category_links();
+      //$category_links = _opendoors_discussion_get_category_links();
 
       // Main filter links
       $primary_filters = '<ul class="primary-filters">';
@@ -274,7 +274,7 @@ function opendoors_discussion_block_view($delta = '') {
       $search_filter = render($search_block['content']);
       
       $block['subject'] = '';
-      $block['content'] = $category_links . $primary_filters . $search_filter . $secondary_filter;
+      $block['content'] = $primary_filters . $search_filter . $secondary_filter;
       break;
       
     case 'proposal_add_form':

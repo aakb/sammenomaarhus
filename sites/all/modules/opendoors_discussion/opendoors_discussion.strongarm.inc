@@ -250,5 +250,110 @@ function opendoors_discussion_strongarm() {
   );
   $export['rate_widgets'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_display_descendants_proposal_category';
+  $strongarm->value = 0;
+  $export['taxonomy_menu_display_descendants_proposal_category'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_display_num_proposal_category';
+  $strongarm->value = 0;
+  $export['taxonomy_menu_display_num_proposal_category'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_end_all_proposal_category';
+  $strongarm->value = FALSE;
+  $export['taxonomy_menu_end_all_proposal_category'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_expanded_proposal_category';
+  $strongarm->value = 1;
+  $export['taxonomy_menu_expanded_proposal_category'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_flat_proposal_category';
+  $strongarm->value = 0;
+  $export['taxonomy_menu_flat_proposal_category'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_hide_empty_terms_proposal_category';
+  $strongarm->value = 0;
+  $export['taxonomy_menu_hide_empty_terms_proposal_category'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_path_proposal_category';
+  $strongarm->value = 'taxonomy_menu_path_default';
+  $export['taxonomy_menu_path_proposal_category'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_rebuild_proposal_category';
+  $strongarm->value = 0;
+  $export['taxonomy_menu_rebuild_proposal_category'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_sync_proposal_category';
+  $strongarm->value = 1;
+  $export['taxonomy_menu_sync_proposal_category'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_term_item_description_proposal_category';
+  $strongarm->value = 0;
+  $export['taxonomy_menu_term_item_description_proposal_category'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_vocab_menu_proposal_category';
+  $strongarm->value = 'menu-proposal-category-menu';
+  $export['taxonomy_menu_vocab_menu_proposal_category'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_vocab_parent_proposal_category';
+  $strongarm->value = '0';
+  $export['taxonomy_menu_vocab_parent_proposal_category'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_voc_item_description_proposal_category';
+  $strongarm->value = 0;
+  $export['taxonomy_menu_voc_item_description_proposal_category'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_voc_item_proposal_category';
+  $strongarm->value = FALSE;
+  $export['taxonomy_menu_voc_item_proposal_category'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'taxonomy_menu_voc_name_proposal_category';
+  $strongarm->value = FALSE;
+  $export['taxonomy_menu_voc_name_proposal_category'] = $strongarm;
+
   return $export;
 }
