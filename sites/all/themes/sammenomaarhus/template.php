@@ -110,6 +110,24 @@ function sammenomaarhus_preprocess_node_proposal(&$vars, $hook) {
 }
 
 /**
+ * Add hotness to category menu items
+ *
+ * @param array $variables
+ * @return string
+ */
+
+function sammenomaarhus_menu_link(array $variables) {
+
+  if($variables['element']['#theme'] == 'menu_link__menu_proposal_category_menu') {
+    $cat_no = substr(strrchr($variables['element']['#href'], '/'), 1);
+    $hotness = $cat_no * 20;
+    $variables['element']['#attributes']['class'][] = 'hotness-' . $hotness;
+  }
+
+  return theme_menu_link($variables);
+}
+
+/**
  * Override or insert variables into the comment templates.
  *
  * @param $variables
