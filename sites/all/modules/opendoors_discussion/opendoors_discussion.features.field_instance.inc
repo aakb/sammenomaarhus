@@ -87,8 +87,8 @@ function opendoors_discussion_field_default_field_instances() {
       'settings' => array(
         'maxlength_js' => 4000,
         'maxlength_js_enforce' => 0,
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-        'maxlength_js_label_summary' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'maxlength_js_label' => 'Længde begrænset til @limit tegn: <strong>@remaining</strong> tilbage',
+        'maxlength_js_label_summary' => 'Længde begrænset til @limit tegn: <strong>@remaining</strong> tilbage',
         'maxlength_js_summary' => '',
         'maxlength_js_truncate_html' => 0,
         'rows' => 20,
@@ -146,7 +146,7 @@ function opendoors_discussion_field_default_field_instances() {
     'bundle' => 'proposal',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Please indicate which topic you write about.',
+    'description' => 'Vælg venligst hvilket tema for dit forslag',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -536,7 +536,6 @@ function opendoors_discussion_field_default_field_instances() {
   t('Check to highlight and recommend the proposal in a special section to the users.');
   t('Hotness');
   t('Moderation status');
-  t('Please indicate which topic you write about.');
   t('Please provide that day the response was given.');
   t('Please provide the author of the municipal response.');
   t('Recommended / Featured');
@@ -546,6 +545,7 @@ function opendoors_discussion_field_default_field_instances() {
   t('Response of the municipality (images)');
   t('Serial');
   t('Use this field to moderate content. The status indicates whether a proposal was read by the moderation team already.');
+  t('Vælg venligst hvilket tema for dit forslag');
   t('You can also provide an image to illustrate your response text.');
   t('attachment');
 
