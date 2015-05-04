@@ -110,7 +110,7 @@ $tabs-border: #bbb;
 // Own variables
 //
 
-$header-color: #2A2A5A;
+$header-color: rgb(42, 45, 88);
 $background-hover: #333333;
 
 /* Original colors
@@ -128,12 +128,12 @@ $heatmap0: #157BB3;
 $heatmap0-light: #4c7f91;
 */
 
-$heatmap0: #157BB3;
-$heatmap1: #157BB3;
-$heatmap2: #157BB3;
-$heatmap3: #157BB3;
-$heatmap4: #157BB3;
-$heatmap5: #157BB3;
+$heatmap0: #d85400;
+$heatmap1: #b43600;
+$heatmap2: #9d4e14;
+$heatmap3: #d85400;
+$heatmap4: #b43600;
+$heatmap5: #9d4e14;
 
 $heatmap5-light: lighten($heatmap5, 20%);
 $heatmap4-light: lighten($heatmap4, 20%);
@@ -171,7 +171,7 @@ Mange svar
 Få svar
 */
 
-$highlight: #b13a32;
+$highlight: $header-color;
 $highlight-dark: darken($highlight, 20%);
 
 
