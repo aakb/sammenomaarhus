@@ -14,7 +14,7 @@ div#pane-proposal-discussion-filter ul.primary-filters li span:hover { color: $h
 
 /* Category Chooser background */
 div#edit-field-category div#edit-field-category-und {
-  background-color: $ocean;
+  background-color: $heatmap0;
 }
 /* Category Chooser + Filter bar category items */
 div#edit-field-category div.form-type-radio label,
@@ -29,7 +29,7 @@ div#pane-proposal-discussion-filter ul.secondary-filters li a:hover, div#pane-pr
 
 /* Main bubble */
 div.proposal-form
-{ background-color: $ocean;
+{ background-color: $heatmap0;
   h1, h2, h3, h4, h5, h6, label {
     color: $white-font;
   }
@@ -71,3 +71,23 @@ article.node-proposal.hotness-40  div.field-name-field-category, article.node-pr
 article.node-proposal.hotness-60  div.field-name-field-category, article.node-proposal.hotness-3 div.field-name-field-category a { color: $heatmap3; }
 article.node-proposal.hotness-80  div.field-name-field-category, article.node-proposal.hotness-4 div.field-name-field-category a { color: $heatmap4; }
 article.node-proposal.hotness-100 div.field-name-field-category, article.node-proposal.hotness-5 div.field-name-field-category a { color: $heatmap5; }
+
+div.pane-menu-menu-proposal-category-menu li.hotness-20 a {
+  background-color: $heatmap1;
+}
+
+div.pane-menu-menu-proposal-category-menu li.hotness-40 a {
+  background-color: $heatmap2;
+}
+
+div.pane-menu-menu-proposal-category-menu li.hotness-60 a {
+  background-color: $heatmap3;
+}
+
+div.pane-menu-menu-proposal-category-menu li.hotness-80 a {
+  background-color: $heatmap4;
+}
+
+div.pane-menu-menu-proposal-category-menu li.hotness-100 a {
+  background-color: $heatmap5;
+}
