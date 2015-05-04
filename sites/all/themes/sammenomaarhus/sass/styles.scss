@@ -743,6 +743,64 @@ body.not-front div.button-menu {
   text-align: center;
 }
 
+//Footer
+
+@media (max-width: 568px) {
+  footer#footer {
+    @include zen-clear();
+    @include zen-grid-item(12, 1);
+    background-color: #FFF;
+    padding-top: 1em;
+
+    #footer-logo {
+      @include zen-grid-item(12, 1);
+    }
+
+    #footer-right {
+      @include zen-clear();
+      @include zen-grid-item(12, 1);
+
+      padding-top: 2em;
+    }
+  }
+}
+
+@media (max-width: 959px) and (min-width: 569px) {
+  footer#footer {
+    @include zen-clear();
+    @include zen-grid-item(12, 1);
+    background-color: #FFF;
+    padding-top: 1em;
+
+    #footer-logo {
+      @include zen-grid-item(6, 1);
+    }
+
+    #footer-right {
+      @include zen-grid-item(6, 7);
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  footer#footer {
+    @include zen-clear();
+    @include zen-grid-item(12, 1);
+    background-color: #FFF;
+    padding-top: 1em;
+
+    #footer-logo {
+      @include zen-grid-item(4, 1);
+    }
+
+    #footer-right {
+      @include zen-grid-item(4, 9);
+    }
+  }
+}
+
+
+
 //
 // Frontpage styles
 //

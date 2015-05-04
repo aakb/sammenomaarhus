@@ -28,69 +28,6 @@ function sammenomaarhus_custom_menu_default_menu_links() {
     'customized' => 0,
     'parent_identifier' => 'management_menuer:admin/structure/menu',
   );
-  // Exported menu link: management_clean-urls:admin/config/search/clean-urls
-  $menu_links['management_clean-urls:admin/config/search/clean-urls'] = array(
-    'menu_name' => 'management',
-    'link_path' => 'admin/config/search/clean-urls',
-    'router_path' => 'admin/config/search/clean-urls',
-    'link_title' => 'Clean URLs',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Enable or disable clean URLs for your site.',
-      ),
-      'identifier' => 'management_clean-urls:admin/config/search/clean-urls',
-    ),
-    'module' => 'system',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 5,
-    'customized' => 0,
-    'parent_identifier' => 'management_sgning-og-metadata:admin/config/search',
-  );
-  // Exported menu link: management_eu-cookie-compliance:admin/config/system/eu-cookie-compliance
-  $menu_links['management_eu-cookie-compliance:admin/config/system/eu-cookie-compliance'] = array(
-    'menu_name' => 'management',
-    'link_path' => 'admin/config/system/eu-cookie-compliance',
-    'router_path' => 'admin/config/system/eu-cookie-compliance',
-    'link_title' => 'EU Cookie Compliance',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Make your website compliant with the EU Directive on Privacy and Electronic Communications.',
-      ),
-      'identifier' => 'management_eu-cookie-compliance:admin/config/system/eu-cookie-compliance',
-    ),
-    'module' => 'system',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
-    'customized' => 0,
-    'parent_identifier' => 'management_system:admin/config/system',
-  );
-  // Exported menu link: management_url-aliases:admin/config/search/path
-  $menu_links['management_url-aliases:admin/config/search/path'] = array(
-    'menu_name' => 'management',
-    'link_path' => 'admin/config/search/path',
-    'router_path' => 'admin/config/search/path',
-    'link_title' => 'URL aliases',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'Change your site\'s URL paths by aliasing them.',
-      ),
-      'identifier' => 'management_url-aliases:admin/config/search/path',
-    ),
-    'module' => 'system',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 1,
-    'expanded' => 0,
-    'weight' => -5,
-    'customized' => 0,
-    'parent_identifier' => 'management_sgning-og-metadata:admin/config/search',
-  );
   // Exported menu link: menu-button-menu_ls-om-processen:node/10
   $menu_links['menu-button-menu_ls-om-processen:node/10'] = array(
     'menu_name' => 'menu-button-menu',
@@ -134,11 +71,8 @@ function sammenomaarhus_custom_menu_default_menu_links() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Button Menu');
-  t('Clean URLs');
-  t('EU Cookie Compliance');
   t('Læs om processen');
   t('Stil forslag');
-  t('URL aliases');
 
 
   return $menu_links;

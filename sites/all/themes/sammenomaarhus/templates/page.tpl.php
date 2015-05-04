@@ -118,7 +118,10 @@
 
   </div>
 
-  <?php print render($page['footer']); ?>
+  <footer id="footer">
+    <div id="footer-logo"><img src="<?php print path_to_theme().'/images/medborgerskab-i-aarhus-logotype-luftfri.png' ; ?>" alt="<?php print t('Medborgerskab i Aarhus'); ?>" class="footer__logo-image" /></div>
+    <div id="footer-right"><?php print render($page['footer']); ?></div>
+  </footer>
 
 </div>
 
