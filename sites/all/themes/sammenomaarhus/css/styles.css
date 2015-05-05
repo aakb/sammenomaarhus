@@ -2158,6 +2158,9 @@ body.not-front div.button-menu {
   word-wrap: break-word;
   text-align: center; }
 
+footer#footer #footer-logo p {
+  margin-top: 1em; }
+
 @media (max-width: 568px) {
   footer#footer {
     clear: left;
