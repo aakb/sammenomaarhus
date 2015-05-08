@@ -1667,7 +1667,9 @@ header#header {
           opacity: 0.95; } }
 @media all and (max-width: 380px) {
   #content div.button-menu {
-    text-align: center; }
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0; }
     #content div.button-menu ul.menu {
       margin: 0; }
       #content div.button-menu ul.menu li {
@@ -2400,6 +2402,10 @@ div.welcome-text {
       margin-top: 0;
       font-size: 1.125em; }
 
+@media all and (max-width: 500px) {
+  div.welcome-text {
+    margin-right: 0;
+    margin-left: 0; } }
 div.proposal-form {
   clear: left;
   margin-right: 15px;
@@ -2711,9 +2717,14 @@ div.pane-menu-menu-proposal-category-menu {
     box-sizing: border-box;
     word-wrap: break-word; } }
 @media all and (max-width: 500px) {
-  div.pane-menu-menu-proposal-category-menu h2 {
-    display: block;
-    margin: 0; } }
+  div.pane-menu-menu-proposal-category-menu {
+    padding-right: 0;
+    padding-left: 0; }
+    div.pane-menu-menu-proposal-category-menu h2 {
+      display: block;
+      margin: 0; }
+    div.pane-menu-menu-proposal-category-menu ul.menu li {
+      margin-left: 0.5em; } }
 @media all and (max-width: 380px) {
   div.pane-menu-menu-proposal-category-menu h2, div.pane-menu-menu-proposal-category-menu ul {
     margin: 0.5em 0; }
@@ -2722,7 +2733,9 @@ div.pane-menu-menu-proposal-category-menu {
     padding: 0.7em; } }
 @media all and (max-width: 319px) {
   div.pane-menu-menu-proposal-category-menu ul.menu a {
-    padding: 0.4em; } }
+    padding: 0.4em; }
+  div.pane-menu-menu-proposal-category-menu ul.menu li {
+    margin-left: 0.1em; } }
 div#pane-proposal-discussion-filter {
   clear: left;
   float: left;
@@ -2882,6 +2895,14 @@ div#pane-proposal-discussion-filter {
         float: left;
         margin-left: 0;
         margin-right: 15px; } }
+@media all and (max-width: 500px) {
+  div#pane-proposal-discussion-filter {
+    padding-left: 0;
+    padding-right: 0; }
+    div#pane-proposal-discussion-filter ul.primary-filters li {
+      font-size: 1.2em; }
+    div#pane-proposal-discussion-filter ul.secondary-filters li {
+      font-size: 1.2em; } }
 div.view-proposals {
   clear: left; }
 
@@ -3284,17 +3305,24 @@ article.node-proposal {
       color: #f2f2f2; }
       article.node-proposal div.bubble a:hover, article.node-proposal div.bubble a:focus {
         text-decoration: none; }
-  article.node-proposal div.bubble-teaser:before {
-    content: url(../images/bubble-tinyhook-white50.png);
-    position: absolute;
-    right: 32px;
-    bottom: -35px; }
-  article.node-proposal div.bubble-teaser span.border-cover-snippet {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    right: 35px;
-    bottom: -5px; }
+  article.node-proposal div.bubble-teaser {
+    padding-bottom: 2.3em; }
+    article.node-proposal div.bubble-teaser:before {
+      content: url(../images/bubble-tinyhook-white50.png);
+      position: absolute;
+      right: 32px;
+      bottom: -35px; }
+    article.node-proposal div.bubble-teaser span.border-cover-snippet {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      right: 35px;
+      bottom: -5px; }
+    article.node-proposal div.bubble-teaser li.node-readmore {
+      position: absolute;
+      bottom: 0.6em;
+      right: 0.2em;
+      opacity: 0.8; }
   article.node-proposal.hotness-0 div.bubble-teaser span.border-cover-snippet, article.node-proposal.hotness-20 div.bubble-teaser span.border-cover-snippet, article.node-proposal.hotness-40 div.bubble-teaser span.border-cover-snippet, article.node-proposal.hotness-60 div.bubble-teaser span.border-cover-snippet, article.node-proposal.hotness-80 div.bubble-teaser span.border-cover-snippet, article.node-proposal.hotness-100 div.bubble-teaser span.border-cover-snippet {
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;

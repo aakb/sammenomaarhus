@@ -53,6 +53,15 @@ div.welcome-text {
 
 }
 
+@media all and (max-width:500px) {
+  div.welcome-text {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+
+
 //
 // Proposal Form
 //
@@ -531,9 +540,17 @@ div.pane-menu-menu-proposal-category-menu {
 
 @media all and (max-width:500px) {
   div.pane-menu-menu-proposal-category-menu {
+    padding-right: 0;
+    padding-left: 0;
     h2 {
       display: block;
       margin: 0;
+    }
+
+    ul.menu {
+      li {
+        margin-left: 0.5em;
+      }
     }
   }
 }
@@ -557,6 +574,9 @@ div.pane-menu-menu-proposal-category-menu {
     ul.menu {
       a {
         padding: 0.4em;
+      }
+      li {
+        margin-left: 0.1em;
       }
     }
   }
@@ -821,10 +841,24 @@ div#pane-proposal-discussion-filter {
     }
 
   }
-
-
 }
 
+@media all and (max-width:500px) {
+
+  div#pane-proposal-discussion-filter {
+    padding-left: 0;
+    padding-right: 0;
+
+    ul.primary-filters li {
+      font-size: 1.2em;
+    }
+
+    ul.secondary-filters li {
+      font-size: 1.2em;
+    }
+
+  }
+}
 
 //
 // Pane Proposals List

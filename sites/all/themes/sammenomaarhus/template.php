@@ -249,3 +249,24 @@ function sammenomaarhus_form_alter(&$form, &$form_state, $form_id) {
   $files[] = drupal_get_path('module', 'node') . '/node.pages.inc';
   $form_state['build_info']['files'] = $files;
 }
+
+/**
+ * Remove 'Add comment' link from teasers
+ *
+ * @param $build
+ */
+
+function sammenomaarhus_node_view_alter(&$build){
+  if ($build['#view_mode'] == 'teaser')
+  {
+    // remove "add comment" link from node teaser mode display
+    unset($build['links']['comment']['#links']['comment-add']);
+    // and if logged out this will cause another list item to appear, so let's get rid of that
+    unset($build['links']['comment']['#links']['comment_forbidden']);
+    // and remove cooment count link
+    unset($build['links']['comment']['#links']['comment-comments']);
+  }
+}
+function sammenomaarhus_links($links) {
+  return theme_links($links);
+}

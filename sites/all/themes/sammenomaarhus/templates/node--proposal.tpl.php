@@ -85,6 +85,7 @@ if ( isset($view->row_index) ){
         <span class="border-cover-snippet"></span>
 
         <?php print render($content) ; ?>
+        <?php print render($content['links']); ?>
       </div>
 
 

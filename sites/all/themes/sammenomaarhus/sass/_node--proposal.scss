@@ -445,6 +445,7 @@ article.node-proposal {
 	// bubbles teaser view
 	//
 	div.bubble-teaser {
+        padding-bottom: 2.3em;
 		&:before {
 			content: url(../images/bubble-tinyhook-white50.png);
 			position: absolute;
@@ -461,6 +462,13 @@ article.node-proposal {
 			right: 35px;
 			bottom: -5px;
 		}
+
+      li.node-readmore {
+        position: absolute;
+        bottom: 0.6em;
+        right: 0.2em;
+        opacity: 0.8;
+      }
 	}
 	//
 	// NOTE: Background color is defined by custom variables (theme-settings.php)

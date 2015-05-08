@@ -301,6 +301,8 @@ header#header {
 @media all and (max-width: 380px) {
   #content div.button-menu {
     text-align: center;
+    padding-left: 0;
+    padding-right: 0;
 
     ul.menu {
       margin: 0;
