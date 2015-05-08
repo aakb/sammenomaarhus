@@ -537,7 +537,7 @@ div.pane-menu-menu-proposal-category-menu {
   }
 }
 
-@media all and (max-width:500px) {
+@media all and (max-width:520px) {
   div.pane-menu-menu-proposal-category-menu {
     padding-right: 0;
     padding-left: 0;
@@ -563,6 +563,9 @@ div.pane-menu-menu-proposal-category-menu {
       a {
         font-size: 0.8em;
         padding: 0.7em;
+      }
+      li {
+        margin: 0.5em 0.2em;
       }
     }
   }
