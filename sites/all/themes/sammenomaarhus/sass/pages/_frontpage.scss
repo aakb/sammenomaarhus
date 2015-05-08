@@ -493,7 +493,6 @@ div.pane-menu-menu-proposal-category-menu {
   h2 {
     font-size: 1.2em;
     display: inline-block;
-    line-height: 24px;
     margin: 1em 0.5em;
     vertical-align: top;
     font-weight: bold;
@@ -505,20 +504,20 @@ div.pane-menu-menu-proposal-category-menu {
 
     li {
       float: left;
-      margin-left: 1.2em;
+      margin: 0 0.5em 0 0;
       list-style-image: none;
       list-style-type: none;
     }
 
-    li:first-child {
-      margin-left: 0;
+    li:last-child {
+      margin-right: 0;
     }
 
     a {
       font-size: 1em;
       font-family: $font-header;
-      background-color: $highlight;
       color: $white-font;
+      background-color: $highlight;
       padding: 0.8em;
       border-radius: $border-radius;
       text-decoration: none;
@@ -549,7 +548,7 @@ div.pane-menu-menu-proposal-category-menu {
 
     ul.menu {
       li {
-        margin-left: 0.5em;
+        margin: 1em 0.5em;
       }
     }
   }
