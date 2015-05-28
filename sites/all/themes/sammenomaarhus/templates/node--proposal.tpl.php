@@ -85,7 +85,7 @@ if ( isset($view->row_index) ){
         <span class="border-cover-snippet"></span>
 
         <?php print render($content) ; ?>
-        <?php print render($content['links']); ?>
+
       </div>
 
 
@@ -101,6 +101,7 @@ if ( isset($view->row_index) ){
     </div><!-- /.heatmap -->
 
   </a>
+  <?php print render($content['links']); ?>
   <?php /* </a> */ ?>
 
 
