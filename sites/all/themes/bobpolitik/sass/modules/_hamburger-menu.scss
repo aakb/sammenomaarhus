@@ -45,7 +45,10 @@
       font-weight: 600;
       color: $black;
 
-      &.active {
+      &:focus,
+      &:link,
+      &:visited,
+      &:hover {
         color: $black;
         text-decoration: underline;
       }

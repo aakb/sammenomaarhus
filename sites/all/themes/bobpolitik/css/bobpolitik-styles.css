@@ -134,10 +134,11 @@ header#header .main-menu {
       background: transparent;
       border-right: 1px solid #333333;
       border-radius: 0;
-      padding: 0 10px;
-      text-decoration: underline; }
+      padding: 0 10px; }
       header#header .main-menu li a:focus, header#header .main-menu li a:link, header#header .main-menu li a:visited, header#header .main-menu li a:hover {
         background: transparent; }
+      header#header .main-menu li a .active {
+        text-decoration: underline; }
 
 /**
  *
@@ -175,7 +176,7 @@ header#header .main-menu {
     .hamburger-menu--links a {
       font-weight: 600;
       color: #333333; }
-      .hamburger-menu--links a.active {
+      .hamburger-menu--links a:focus, .hamburger-menu--links a:link, .hamburger-menu--links a:visited, .hamburger-menu--links a:hover {
         color: #333333;
         text-decoration: underline; }
       .hamburger-menu--links a.is-sub {
