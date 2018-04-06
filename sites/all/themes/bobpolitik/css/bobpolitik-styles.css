@@ -1,0 +1,186 @@
+/**
+*
+*/
+/**
+* Variables
+* --------------------------------- */
+/**
+* Mixins
+* --------------------------------- */
+/* Strip all link styles default color of links to inherit
+================================================================================================================== */
+/**
+* Base styles
+* --------------------------------- */
+html {
+  font-size: 16px;
+  height: 100%; }
+  html body {
+    font-family: Arial, sans-serif;
+    background: #f6f6f6 !important;
+    height: 100%; }
+    html body h1 {
+      font: 38pt/50pt "Arial Black", sans-serif;
+      text-transform: uppercase; }
+    html body h2 {
+      font: 28pt/36pt "Arial Black", sans-serif;
+      text-transform: uppercase; }
+    html body h3 {
+      font: 20pt/30pt "Arial Black", sans-serif;
+      text-transform: uppercase; }
+    html body h4 {
+      font: 20pt/30pt "Arial Black", sans-serif; }
+    html body h5 {
+      font: 15pt/23pt "Arial Black", sans-serif;
+      text-transform: uppercase; }
+    html body h6 {
+      font: 17pt/26pt "Arial Black", sans-serif; }
+    html body blockquote {
+      font: 20pt/30pt "Arial Black", sans-serif; }
+    html body a:link {
+      color: #ee0043;
+      text-decoration: none; }
+    html body a:visited {
+      color: #ee0043;
+      text-decoration: none; }
+    html body a:hover {
+      color: #ee0043;
+      text-decoration: none; }
+    html body a:focus {
+      color: #ee0043;
+      text-decoration: none; }
+    html body input[type="submit"] {
+      background-color: #ee0043; }
+
+/**
+* Layout styles
+* --------------------------------- */
+#page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: none; }
+  #page .header--wrapper {
+    box-sizing: border-box;
+    flex: 0 0 100px;
+    width: 100%; }
+    #page .header--wrapper #header {
+      background: white;
+      box-sizing: border-box;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.19);
+      height: 100px;
+      left: 0;
+      min-height: 0;
+      position: fixed;
+      margin: 0;
+      padding: 20px;
+      right: 0;
+      z-index: 100; }
+      #page .header--wrapper #header .header--inner {
+        max-width: 1366px;
+        margin: 0 auto;
+        height: 100%;
+        position: relative; }
+  #page #main {
+    background-color: white;
+    box-sizing: border-box;
+    flex: 1 1 100%;
+    max-width: 1366px;
+    width: 100%; }
+
+/**
+* Header content styles
+* --------------------------------- */
+header#header nav#secondary-menu .region-secondary-navigation {
+  margin-left: 16px; }
+  header#header nav#secondary-menu .region-secondary-navigation ul.menu li a {
+    background: #3661d8;
+    border-radius: 0; }
+    header#header nav#secondary-menu .region-secondary-navigation ul.menu li a:link {
+      color: white;
+      text-decoration: none; }
+    header#header nav#secondary-menu .region-secondary-navigation ul.menu li a:visited {
+      color: white;
+      text-decoration: none; }
+    header#header nav#secondary-menu .region-secondary-navigation ul.menu li a:hover {
+      color: white;
+      text-decoration: none; }
+    header#header nav#secondary-menu .region-secondary-navigation ul.menu li a:focus {
+      color: white;
+      text-decoration: none; }
+
+header#header nav#secondary-menu ul.links {
+  font: 17px/17px Arial, sans-serif;
+  margin-top: 5px;
+  margin-left: 16px; }
+  header#header nav#secondary-menu ul.links li a {
+    background: transparent;
+    border-right: 1px solid #333333;
+    border-radius: 0;
+    padding: 0 10px; }
+    header#header nav#secondary-menu ul.links li a:focus, header#header nav#secondary-menu ul.links li a:link, header#header nav#secondary-menu ul.links li a:visited, header#header nav#secondary-menu ul.links li a:hover {
+      background: transparent; }
+  header#header nav#secondary-menu ul.links li:last-child a {
+    border-right: 0; }
+
+header#header span#toggle-nav {
+  background: #3661d8; }
+
+/**
+* Main content styles
+* --------------------------------- */
+div#pane-proposal-discussion-filter ul.secondary-filters {
+  min-height: 0; }
+  div#pane-proposal-discussion-filter ul.secondary-filters li a.active {
+    border-radius: 0; }
+
+div#pane-proposal-discussion-filter ul.primary-filters {
+  font-size: 12px; }
+
+div#pane-proposal-discussion-filter ul.primary-filters li.filter-search {
+  display: none; }
+
+div#pane-proposal-discussion-filter {
+  margin-bottom: 20px; }
+
+div#pane-proposal-discussion-filter div.heatmap-legend {
+  margin: 7px; }
+
+div#pane-proposal-discussion-filter form#views-exposed-form-proposal-discussion-page div.views-exposed-form div.views-exposed-widgets div#edit-keys-wrapper input {
+  border: 1px solid rgba(51, 51, 51, 0.2);
+  border-radius: 0;
+  padding: 10px; }
+
+div#pane-proposal-discussion-filter form#views-exposed-form-proposal-discussion-page div.views-exposed-form #edit-submit-proposal-discussion {
+  background-color: #3661d8;
+  border: 1px solid #3661d8;
+  border-radius: 0;
+  padding: 10px; }
+
+article.node-proposal div.heatmap {
+  border-radius: 0; }
+
+/**
+* Overlay content styles
+* --------------------------------- */
+body.overlay {
+  background: rgba(0, 0, 0, 0.2) !important;
+  opacity: 1; }
+  body.overlay #overlay {
+    opacity: 1; }
+  body.overlay div.heatmap.detail-view div.heatmap.detail-view, body.overlay div#overlay div.heatmap.detail-view {
+    margin-right: 0; }
+  body.overlay div.heatmap.detail-view .trigger, body.overlay div#overlay .trigger {
+    right: 0; }
+  body.overlay div.response-bubble-container, body.overlay div#overlay div.response-bubble-container {
+    margin-left: 0; }
+  body.overlay article.node-proposal .hover-box-css div.content-container {
+    width: auto; }
+  body.overlay div#overlay section#comments form#comment-form div#edit-actions {
+    text-align: left; }
+    body.overlay div#overlay section#comments form#comment-form div#edit-actions input#edit-submit {
+      background: none;
+      background-color: #3661d8;
+      border-radius: 0;
+      color: #fff;
+      padding: 0 35px 0 35px; }

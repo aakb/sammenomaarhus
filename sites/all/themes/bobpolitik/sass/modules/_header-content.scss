@@ -1,0 +1,46 @@
+/**
+* Header content styles
+* --------------------------------- */
+
+header#header {
+  nav#secondary-menu {
+    .region-secondary-navigation {
+      margin-left: 16px;
+
+      ul.menu li a {
+        background: $color-primary;
+        border-radius: 0;
+
+        @include strip-link-styles($color:$white);
+      }
+    }
+
+    ul.links {
+      font: 17px/17px $font-family;
+      margin-top: 5px;
+      margin-left: 16px;
+
+      li a {
+        background: transparent;
+        border-right: 1px solid $black;
+        border-radius: 0;
+        padding: 0 10px;
+
+        &:focus,
+        &:link,
+        &:visited,
+        &:hover {
+          background: transparent;
+        }
+      }
+
+      li:last-child a {
+        border-right: 0;
+      }
+    }
+  }
+
+  span#toggle-nav {
+    background: $color-primary;
+  }
+}

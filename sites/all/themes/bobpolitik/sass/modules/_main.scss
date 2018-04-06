@@ -1,0 +1,44 @@
+/**
+* Main content styles
+* --------------------------------- */
+
+div#pane-proposal-discussion-filter ul.secondary-filters {
+  min-height: 0;
+
+  li a.active {
+    border-radius: 0;
+  }
+}
+
+div#pane-proposal-discussion-filter ul.primary-filters {
+  font-size: 12px;
+}
+
+div#pane-proposal-discussion-filter ul.primary-filters li.filter-search {
+  display: none;
+}
+
+div#pane-proposal-discussion-filter {
+  margin-bottom: 20px;
+}
+
+div#pane-proposal-discussion-filter div.heatmap-legend {
+  margin: 7px;
+}
+
+div#pane-proposal-discussion-filter form#views-exposed-form-proposal-discussion-page div.views-exposed-form div.views-exposed-widgets div#edit-keys-wrapper input {
+  border: 1px solid $gray;
+  border-radius: 0;
+  padding: 10px;
+}
+
+div#pane-proposal-discussion-filter form#views-exposed-form-proposal-discussion-page div.views-exposed-form #edit-submit-proposal-discussion {
+  background-color: $color-primary;
+  border: 1px solid #3661d8;
+  border-radius: 0;
+  padding: 10px;
+}
+
+article.node-proposal div.heatmap {
+  border-radius: 0;
+}

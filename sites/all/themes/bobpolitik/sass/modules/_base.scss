@@ -1,0 +1,48 @@
+/**
+* Base styles
+* --------------------------------- */
+
+html {
+  font-size: 16px;
+  height:100%;
+
+  body {
+    font-family: $font-family;
+    background: $gray-lightest!important;
+    height:100%;
+
+    h1 {
+      font: 38pt/50pt $font-family-header;
+      text-transform: uppercase;
+    }
+    h2 {
+      font: 28pt/36pt $font-family-header;
+      text-transform: uppercase;
+    }
+    h3 {
+      font: 20pt/30pt $font-family-header;
+      text-transform: uppercase;
+    }
+    h4 {
+      font: 20pt/30pt $font-family-header;
+    }
+    h5 {
+      font: 15pt/23pt $font-family-header;
+      text-transform: uppercase;
+    }
+    h6 {
+      font: 17pt/26pt $font-family-header;
+    }
+
+    blockquote {
+      font: 20pt/30pt $font-family-header;
+    }
+    a {
+      @include strip-link-styles($color-links, $decoration: none);
+    }
+
+    input[type="submit"] {
+      background-color: $color-links;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+/**
+* Layout styles
+* --------------------------------- */
+
+#page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: none;
+  
+  .header--wrapper {
+    box-sizing: border-box;
+    flex: 0 0 100px;
+    width: 100%;
+
+    #header {
+      background: white;
+      box-sizing: border-box;
+      box-shadow: 0 3px 6px rgba(0,0,0,.12), 0 3px 6px rgba(0,0,0,.19);
+      height: 100px;
+      left: 0;
+      min-height: 0;
+      position: fixed;
+      margin: 0;
+      padding: 20px;
+      right: 0;
+      z-index: 100;
+
+      .header--inner {
+        max-width: 1366px;
+        margin: 0 auto;
+        height: 100%;
+        position: relative;
+      }
+    }
+  }
+
+  #main {
+    background-color: $white;
+    box-sizing: border-box;
+    flex: 1 1 100%;
+    max-width: 1366px;
+    width: 100%;
+  }
+}
+

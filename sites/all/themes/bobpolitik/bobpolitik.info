@@ -1,0 +1,91 @@
+name        = Bobpolitik theme
+description = Theme for bobpolitik site
+core        = 7.x
+base theme  = opendoors_heat
+
+stylesheets[all][] = css/bobpolitik-styles.css
+
+regions[header]         = Header
+regions[navigation]     = Navigation bar
+regions[navigation-butons]        = Frontpage Navigation Buttons
+regions[secondary_navigation]     = Secondary navigation bar
+regions[highlighted]    = Highlighted
+regions[help]           = Help
+regions[content]        = Content
+regions[sidebar_first]  = First sidebar
+regions[sidebar_second] = Second sidebar
+regions[footer]         = Footer
+regions[bottom]         = Page bottom
+regions[page_top]       = Page top
+regions[page_bottom]    = Page bottom
+
+; Various page elements output by the theme can be toggled on and off. The
+; "features" control which of these check boxes display on the
+; admin/appearance config page. This is useful for suppressing check boxes
+; for elements not used by your sub-theme. To suppress a check box, omit the
+; entry for it below. See the Drupal 7 Theme Guide for more info:
+; https://drupal.org/node/171205#features
+
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = favicon
+features[] = main_menu
+features[] = secondary_menu
+
+; Set the default values of settings on the theme-settings.php form.
+settings[toggle_name]               = 0
+settings[toggle_slogan]             = 0
+settings[toggle_main_menu]          = 0
+settings[default_logo]              = 0
+; TODO - Generalize path
+settings[logo_path]                 = sites/all/themes/bobpolitik/bobpolitik_logo.png
+
+settings[zen_breadcrumb]           = no
+settings[zen_breadcrumb_separator] = ' › '
+settings[zen_breadcrumb_home]      = 1
+settings[zen_breadcrumb_trailing]  = 0
+settings[zen_breadcrumb_title]     = 0
+settings[zen_skip_link_anchor]     = main-menu
+settings[zen_skip_link_text]       = Jump to navigation
+settings[zen_html5_respond_meta][] = respond
+settings[zen_html5_respond_meta][] = html5
+settings[zen_html5_respond_meta][] = meta
+settings[zen_rebuild_registry]     = 0
+settings[zen_wireframes]           = 0
+
+; Header background image
+settings[header_background_1] = true
+
+; Use custom colors
+settings[use_custom_colors] = 0
+
+; Basic colors
+settings[text_color] = "#003866"
+settings[page_background_color] = "#f6f6f6"
+
+; Main frontpage bubble color
+settings[main_bubble_color] = "#3661d8"
+; Response bubble color
+settings[response_bubble_color] = "#3661d8"
+
+; Filter bar links
+settings[filterbar_links] = "#3661d8"
+; Filter bar hover
+settings[filterbar_links_hover] = "#3661d8"
+; Filter bar category labels bg
+settings[category_labels_bg] = "#3661d8"
+; Filter bar category labels bg active
+settings[category_labels_bg_active] = "#3661d8"
+; Filter bar category labels font color
+settings[category_labels_font_color] = "#fff"
+
+; Heatmap colors
+settings[heatmap_color_0] = "#008850"
+settings[heatmap_color_1] = "#008486"
+settings[heatmap_color_2] = "#3661d8"
+settings[heatmap_color_3] = "#2b3ba2"
+settings[heatmap_color_4] = "#673ab7"
+settings[heatmap_color_5] = "#ee0043"

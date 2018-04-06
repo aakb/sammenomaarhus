@@ -1,0 +1,42 @@
+/**
+* Overlay content styles
+* --------------------------------- */
+
+body.overlay {
+  background:rgba(0, 0, 0, .2)!important;
+  opacity: 1;
+
+  #overlay {
+    opacity: 1;
+  }
+
+  div.heatmap.detail-view, div#overlay {
+    div.heatmap.detail-view {
+      margin-right: 0;
+    }
+
+    .trigger {
+        right: 0;
+    }
+  }
+
+   div.response-bubble-container, div#overlay div.response-bubble-container {
+    margin-left: 0;
+  }
+
+  article.node-proposal .hover-box-css div.content-container {
+    width: auto;
+  }
+
+  div#overlay section#comments form#comment-form div#edit-actions {
+    text-align: left;
+
+    input#edit-submit {
+      background: none;
+      background-color: $color-primary;
+      border-radius: 0;
+      color: #fff;
+      padding: 0 35px 0 35px;
+    }
+  }
+}
