@@ -46,11 +46,17 @@ header#header {
         border-radius: 0;
         padding: 0 10px;
 
+
         &:focus,
         &:link,
         &:visited,
         &:hover {
           background: transparent;
+          color: $black;
+        }
+
+        .active {
+          text-decoration: underline;
         }
 
         .active {

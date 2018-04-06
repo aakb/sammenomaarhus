@@ -50,6 +50,9 @@
       &:visited,
       &:hover {
         color: $black;
+      }
+
+      .active {
         text-decoration: underline;
       }
 

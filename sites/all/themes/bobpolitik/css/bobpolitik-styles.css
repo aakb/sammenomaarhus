@@ -136,7 +136,10 @@ header#header .main-menu {
       border-radius: 0;
       padding: 0 10px; }
       header#header .main-menu li a:focus, header#header .main-menu li a:link, header#header .main-menu li a:visited, header#header .main-menu li a:hover {
-        background: transparent; }
+        background: transparent;
+        color: #333333; }
+      header#header .main-menu li a .active {
+        text-decoration: underline; }
       header#header .main-menu li a .active {
         text-decoration: underline; }
 
@@ -177,7 +180,8 @@ header#header .main-menu {
       font-weight: 600;
       color: #333333; }
       .hamburger-menu--links a:focus, .hamburger-menu--links a:link, .hamburger-menu--links a:visited, .hamburger-menu--links a:hover {
-        color: #333333;
+        color: #333333; }
+      .hamburger-menu--links a .active {
         text-decoration: underline; }
       .hamburger-menu--links a.is-sub {
         font-weight: 500;
