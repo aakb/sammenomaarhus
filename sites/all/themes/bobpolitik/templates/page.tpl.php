@@ -7,13 +7,34 @@
  * @see https://drupal.org/node/1728148
  */
 ?>
-
+<div class="menu-overlay js-menu-toggle js-hamburger-menu-overlay"></div>
+<div class="nav-toggle js-menu-toggle">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
 <div id="page">
-  <?php if ($main_menu_block): ?>
-    <div class="main-menu--hamburger">
-      <?php print render($main_menu_block); ?>
+  <nav class="hamburger-menu js-hamburger-menu">
+    <div class="hamburger-menu--inner">
+      <div class="hamburger-menu--links">
+        <div class="user-links">
+          <?php if ($user_menu_block) : ?>
+            <?php print render($user_menu_block); ?>
+          <?php else : ?>
+            <ul class="menu">
+              <li class="first"><a href="/user">Login</a></li>
+              <li class="last"><a href="/user/register">Register</a></li>
+            </ul>
+          <?php endif; ?>
+        </div>
+        <?php if ($main_menu_block): ?>
+          <?php print render($main_menu_block); ?>
+        <?php endif; ?>
+      </div>
     </div>
-  <?php endif; ?>
+  </nav>
+
   <div class="header--wrapper">
     <header class="header" id="header" role="banner">
       <div class="header--inner">
@@ -34,17 +55,15 @@
             <?php endif; ?>
           </div>
         <?php endif; ?>
-
-        <span id="toggle-nav" href="#"></span>
-        <?php if ($main_menu_block): ?>
-          <div class="main-menu">
-            <?php print render($main_menu_block); ?>
-          </div>
-        <?php endif; ?>
         <?php if ($secondary_menu): ?>
           <nav class="header__secondary-menu" id="secondary-menu" role="navigation">
             <?php print render($page['secondary_navigation']); ?>
           </nav>
+        <?php endif; ?>
+        <?php if ($main_menu_block): ?>
+          <div class="main-menu">
+            <?php print render($main_menu_block); ?>
+          </div>
         <?php endif; ?>
         <?php print render($page['header']); ?>
       </div>

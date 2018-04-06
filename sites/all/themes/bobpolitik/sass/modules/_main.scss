@@ -4,6 +4,7 @@
 
 div#pane-proposal-discussion-filter ul.secondary-filters {
   min-height: 0;
+  display: none;
 
   li a.active {
     border-radius: 0;
@@ -41,4 +42,12 @@ div#pane-proposal-discussion-filter form#views-exposed-form-proposal-discussion-
 
 article.node-proposal div.heatmap {
   border-radius: 0;
+}
+
+body.page-user div#main input.form-submit {
+  background: none;
+  background-color: $color-primary;
+  border-radius: 0;
+  color: #fff;
+  padding: 0 35px 0 35px;
 }

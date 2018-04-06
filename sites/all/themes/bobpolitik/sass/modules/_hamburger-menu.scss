@@ -1,0 +1,204 @@
+/**
+ *
+ * Hamburger menu
+ *
+ */
+
+
+.hamburger-menu {
+  background-color: $white;
+  border-top: 3px solid $black;
+  bottom: 0;
+  margin-right: 0;
+  max-width: 90%;
+  overflow: hidden;
+  position: fixed;
+  right: -30em;
+  top: 0;
+  transition: right .3s;
+  transition-timing-function: ease-in-out;
+  width: 30em;
+  z-index: 101;
+
+  &.is-open {
+    right: 0;
+  }
+
+  &--inner {
+    height: 100%;
+    overflow-y: scroll;
+  }
+
+  &--links {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 5em;
+    text-align: center;
+
+    li.menu__item {
+      list-style-image: none;
+      list-style-type: none;
+      margin: .5em 0;
+    }
+
+    a {
+      font-weight: 600;
+      color: $black;
+
+      &.active {
+        color: $black;
+        text-decoration: underline;
+      }
+
+      &.is-sub {
+        font-weight: 500;
+        line-height: 2;
+      }
+    }
+  }
+
+  .user-links {
+    padding-left: 2em;
+    padding-right: 2em;
+    text-align: center;
+
+    ul {
+      display: inline-block;
+    }
+
+    li {
+      list-style-image: none;
+      list-style-type: none;
+      float: left;
+
+      a {
+        @include strip-link-styles($white);
+
+        padding: 6px 15px;
+        background: #3661d8;
+      }
+    }
+  }
+
+  &--group {
+    margin-bottom: 1.75em;
+    padding-bottom: 1.5em;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $gray-lighter;
+    }
+  }
+
+  // Nesting since we use the same template.
+  & .nav--link {
+    display: list-item;
+    font-size: 1.1em;
+    list-style: none;
+    margin-bottom: .25em;
+    text-decoration: none;
+  }
+}
+
+
+// hamburger menu toggle-effect
+
+.nav-toggle {
+  display: block;
+  cursor: pointer;
+  height: 30px;
+  position: absolute;
+  right: 1em;
+  top: 33px;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  width: 32px;
+  z-index: 102;
+
+  @include breakpoint(841px) {
+    display: none;
+  }
+}
+
+.nav-toggle.open {
+  @include breakpoint(841px) {
+    display: block;
+  }
+}
+
+.nav-toggle span {
+  background: $black;
+  display: block;
+  height: 5px;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+  width: 100%;
+}
+
+.nav-toggle span:nth-child(1) {
+  top: 0;
+}
+
+.nav-toggle span:nth-child(2),
+.nav-toggle span:nth-child(3) {
+  top: 11px;
+}
+
+.nav-toggle span:nth-child(4) {
+  top: 22px;
+}
+
+.nav-toggle.open span {
+  background: $black;
+}
+
+.nav-toggle.open span:nth-child(1) {
+  left: 50%;
+  top: 15px;
+  width: 0%;
+}
+
+.nav-toggle.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.nav-toggle.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.nav-toggle.open span:nth-child(4) {
+  left: 50%;
+  top: 14px;
+  width: 0%;
+}
+
+/**
+ *
+ * Overlay
+ *
+ */
+$overlay-animation-duration: .3s;
+$overlay-opacity:            .85;
+
+.menu-overlay {
+  bottom: 0;
+  height: 100%;
+  opacity: $overlay-opacity;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  width: 100%;
+  z-index: 101;
+
+  &.is-visible {
+    background-color: $black;
+    cursor: pointer;
+    transition: background
+    $overlay-animation-duration;
+    visibility: visible;
+  }
+}

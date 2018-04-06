@@ -6,6 +6,10 @@ body.overlay {
   background:rgba(0, 0, 0, .2)!important;
   opacity: 1;
 
+  .nav-toggle {
+    display: none;
+  }
+  
   #overlay {
     opacity: 1;
   }
@@ -38,5 +42,10 @@ body.overlay {
       color: #fff;
       padding: 0 35px 0 35px;
     }
+  }
+
+  article.node-proposal div.bubble p,
+  div#overlay div.response-bubble-container div.response-bubble div.field-name-field-municipal-response p {
+    font-size: 1em;
   }
 }
